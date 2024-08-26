@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import "./ReasonOfHelping.css";
+import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
+
 function ReasonOfHelping(props) {
     const [isReadMore, setIsReadMore] = useState(false);
     
@@ -22,6 +24,7 @@ function ReasonOfHelping(props) {
                         <div className="help_content">
                             <h4>{props.name}</h4>
                             <p>{props.desc}
+                            <Link to="/ReadMore"><br></br>      ReadMore</Link>
                                 {/* {isReadMore ? props.desc : descriptionPreview}
                                 {props.desc.length > 500 && (
                                     <span className="read_more" onClick={toggleReadMore}>
