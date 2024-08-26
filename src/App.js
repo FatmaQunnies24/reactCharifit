@@ -4,7 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faPinterest, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faPhone, faEnvelope, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import logoImage from './logo.png';
-import boyImg from './boyImg.png';
+import "./ReasonOfHelping.css";
+
 import About from './Pages/About';
 import Blog from './Pages/Blog';
 import Cause from './Pages/Cause';
@@ -12,6 +13,7 @@ import Contact from './Pages/Contact';
 import Elements from './Pages/Elements';
 import SingleBlog from './Pages/SingleBlog';
 
+import ReasonOfHelping from './ReasonOfHelping';
 import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
 
 
@@ -22,6 +24,26 @@ function App() {
   
 const [phoneNumber,setPhoneNumber]=useState("+1 (454) 556-5656");
 const [email,setEmail]=useState(" Yourmail@gmail.com");
+const [reasonOfHelping,setReasonOfHelping]=useState([{"id":1,"name":"Collecting Fund","imgUrl":"1.png","desc":"Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print."},
+  {"id":2,"name":"Blood Camp","imgUrl":"2.png","desc":"Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print."},
+  {"id":3,"name":"Friendly Volunteer","imgUrl":"3.png","desc":"Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print."}]);
+
+
+
+
+useEffect(() => {
+  fetch("", {
+      headers: {
+          // Authorization: "Bearer " + token,
+      },
+  })
+      .then((response) => response.json())
+      .then((data) => {
+        setReasonOfHelping(data);
+      })
+      .catch((error) => console.error("Error fetching data:", error));
+}, []);
+
   return (
     
     <div className="App">
@@ -81,6 +103,47 @@ const [email,setEmail]=useState(" Yourmail@gmail.com");
         Learn more
       </Link></div>
       </header>
+
+
+
+
+      <div class="reson_area section_padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center mb-55">
+                        <h3><span>Reason of Helping</span></h3>
+                    </div>
+                    </div>
+                    </div> 
+
+                    <div className="row justify-content-center">
+                <div className="col-lg-4 col-md-6">
+                    <div className="single_reson">
+                    <div className="thum">
+                    {reasonOfHelping.map(reason => (
+                        <ReasonOfHelping
+                            key={reason.id}
+                            imgUrl={reason.imgUrl}
+                            name={reason.name}
+                            desc={reason.desc}
+                        />
+                    ))}
+                    
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    
+
+
+
+
+
+
+
 
 
 <Routes>
