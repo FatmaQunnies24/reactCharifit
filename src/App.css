@@ -264,5 +264,26 @@
   z-index: -1;
 }
 
+.causes_active {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  width: 80%; /* عرض 80% */
+  margin: 0 auto; /* تمركز المحتوى */
+}
 
+.single_cause {
+  flex: 0 0 33.33%; /* يظهر 3 عناصر فقط في الصفحة الواحدة */
+  scroll-snap-align: start;
+  margin-right: 20px; /* مسافة بين العناصر */
+}
 
+.causes_active::-webkit-scrollbar {
+  width: 0;  /* إخفاء شريط التمرير */
+  height: 0;
+}
+
+.causes_active::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
