@@ -21,14 +21,30 @@ function Activities() {
         })
         .catch((error) => console.error("Error fetching data:", error));
     }, []);
-//  const isPlayHandel=setIsPlaying(!isPlaying);
+ const isPlayhandle= () => {
+    setIsPlaying(true);
+  };
+  const handleCloseModal = () => {
+    setIsPlaying(false);
+  };
+
     return (
         <>
             <div className="latest_activites_area">
                 <div className="video_bg_1 video_activite d-flex align-items-center justify-content-center">
                 <img src="/images/man.png" className="popup-video" alt="Descriptive text"></img>
+                <button onClick={isPlayhandle} className="green-button">
+        <svg width="24" height="24" viewBox="0 0 24 24">
+          <path d="M8 5v14l11-7z" fill="white"/>
+        </svg>
+      </button>
 
-                {/* <iframe 
+
+      {isPlaying && (
+        <div className="modal">
+          <div className="modal-content">
+            <span onClick={handleCloseModal} className="close-button">&times;</span>
+            <p> <iframe 
     className="popup-video"  
     width="560" 
     height="315" 
@@ -43,7 +59,11 @@ function Activities() {
         backgroundSize: 'cover'
     }}>
     <i className="flaticon-ui"></i>
-</iframe> */}
+</iframe></p>
+          </div>
+        </div>
+      )}
+               
 
 
                 </div>
@@ -58,7 +78,7 @@ function Activities() {
                                     </h3>
                                 </div>
                                 <p className="para_1">{activities.desc}</p>
-                                <a href="#" data-scroll-nav="1" className="boxed-btn4">Donate Now</a>
+                                <button> <a href="#" data-scroll-nav="1" className="boxed-btn4">Donate Now</a></button>
                             </div>
                         </div>
                     </div>
