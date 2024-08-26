@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faPinterest, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faPhone, faEnvelope, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import logoImage from './logo.png';
-import boyImg from './boyImg.webp';
+import boyImg from './boyImg.png';
 import About from './Pages/About';
 import Blog from './Pages/Blog';
 import Cause from './Pages/Cause';
@@ -71,16 +71,15 @@ const [email,setEmail]=useState(" Yourmail@gmail.com");
           <button className="donate-button">Make a Donate</button>
         </nav>
        
-        <div className="hero-section" style={{ backgroundImage: `url(${boyImg})` }}>
+        <div className="hero-section  d-flex align-items-center slider_bg_1 overlay2" >
         <h2><br></br> </h2>
         <h2><br></br> </h2>
           <h2>Get Started Today.</h2>
           <h1>Help the children<br></br> When They Need</h1>
           <p>With so much to consume and such little time, coming up <br></br>with relevant title ideas is essential.</p>
-         <div  className="donate-button"> <Link to="/About">
+         <Link to="/About"className="donate-button"  style={{ marginLeft: 0 }}>
         Learn more
-      </Link>  </div> <div className='co'>   
-        </div></div>
+      </Link></div>
       </header>
 
 
