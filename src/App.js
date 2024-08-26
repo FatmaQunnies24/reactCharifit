@@ -12,6 +12,7 @@ import Cause from './Pages/Cause';
 import Contact from './Pages/Contact';
 import Elements from './Pages/Elements';
 import SingleBlog from './Pages/SingleBlog';
+import Activities from './Pages/Activities';
 
 import ReasonOfHelping from './ReasonOfHelping';
 import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
@@ -139,6 +140,8 @@ useEffect(() => {
                     
 
 
+
+<Activities></Activities>
 
 
 

@@ -1,0 +1,154 @@
+.latest_activites_area {
+    background: rgba(60, 199, 143, 0.06);
+    position: relative;
+    display: grid;
+    grid-template-columns: 40% 60%; /* الفيديو يأخذ 30% والنص 70% */
+    column-gap: 1rem;
+    align-items: stretch; /* تمديد العناصر لملء الطول الكامل */
+    padding: 50px 0;
+    height: 100vh; /* تعيين ارتفاع القسم بأكمله إلى 100% من ارتفاع الشاشة */
+}
+
+.latest_activites_area .video_activite {
+    width: 100%; /* عرض الفيديو يتبع نسبة 30% */
+    height: 100%; /* جعل الفيديو يمتد 100% من الطول */
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
+    .latest_activites_area .video_activite {
+        display: none !important;
+    }
+}
+
+.latest_activites_area .video_activite a {
+    font-size: 70px;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: #3CC78F;
+    text-align: center;
+    line-height: 150px;
+    border-radius: 50%;
+}
+
+.latest_activites_area .video_activite::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #3CC78F;
+    opacity: .3;
+    content: '';
+    z-index: 3;
+}
+
+.latest_activites_area .activites_info {
+    width: 80%; /* عرض النص يتبع نسبة 70% */
+    padding-left: 50px;
+    z-index: 4;
+    height: 100%; /* جعل النص يمتد 100% من الطول */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* لضمان أن النص يكون في منتصف الطول */
+}
+
+@media (max-width: 767px) {
+    .latest_activites_area {
+        grid-template-columns: 1fr; /* تعديل العرض لعمود واحد في الشاشات الصغيرة */
+        padding: 20px 0;
+        height: auto; /* تعيين الارتفاع تلقائيًا في الشاشات الصغيرة */
+    }
+
+    .latest_activites_area .activites_info {
+        width: 100%;
+        padding-left: 0;
+        padding: 50px 15px;
+        height: auto; /* تعيين الارتفاع تلقائيًا في الشاشات الصغيرة */
+    }
+
+    .latest_activites_area .video_activite {
+        width: 100%;
+    }
+}
+
+.latest_activites_area .activites_info p.para_1 {
+    margin-bottom: 22px;
+    margin-top: 20px;
+}
+
+.latest_activites_area .activites_info p.para_2 {
+    margin-bottom: 30px;
+}
+
+.popup-video ::before{
+    background-image: url('../../public/images/man.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%; 
+    height: 100%;
+    z-index: 4;
+           position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: #3CC78F;
+        opacity: .3;
+        content: '';
+        z-index: 3;
+}
+.video_bg_1 img{
+    width: 100%;
+    height: 100%;
+}
+.video_container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Occupy full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(60, 199, 143, 0.06);
+}
+
+.play_button {
+    position: absolute;
+    z-index: 10;
+    background-color: #3CC78F;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.play_button a {
+    font-size: 70px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.video_popup {
+    display: none;
+    position: absolute;
+    z-index: 20;
+    width: 80%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.video_popup iframe {
+    width: 100%;
+    height: 100%;
+}
