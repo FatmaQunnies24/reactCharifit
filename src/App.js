@@ -13,6 +13,8 @@ import Contact from './Pages/Contact';
 import Elements from './Pages/Elements';
 import SingleBlog from './Pages/SingleBlog';
 import Activities from './Pages/Activities';
+import CausesList from './Pages/CausesList';
+import Statistic from './Pages/Statistic';
 
 import ReasonOfHelping from './ReasonOfHelping';
 import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
@@ -144,11 +146,27 @@ useEffect(() => {
 <Activities></Activities>
 
 
+<div className="popular_causes_area section_padding">
+            <div className="container">
+                <div className="row justify-content-center">
+                    <div className="col-lg-6">
+                        <div className="section_title text-center mb-55">
+                            <h3><span>Popular Causes</span></h3>
+                        </div>
+                    </div>
+                </div>
+<CausesList></CausesList>
+
+
+                </div>
+                </div>
 
 
 
 
 
+
+<Statistic></Statistic>
 <Routes>
       <Route path="/Home" element={<App />} />
                         <Route path="/About" element={<About></About>} />
