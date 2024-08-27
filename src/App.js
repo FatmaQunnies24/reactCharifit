@@ -15,6 +15,7 @@ import SingleBlog from './Pages/SingleBlog';
 import Activities from './Pages/Activities';
 import CausesList from './Pages/CausesList';
 import Statistic from './Pages/Statistic';
+import Volunteer from './Pages/Volunteer';
 
 import ReasonOfHelping from './ReasonOfHelping';
 import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
@@ -166,7 +167,36 @@ useEffect(() => {
 
 
 
+
+
 <Statistic></Statistic>
+
+
+
+
+
+
+
+                <div class="our_volunteer_area section_padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center mb-55">
+                        <h3><span><br></br><br></br>Our Volunteer</span></h3>
+                    </div>
+                    </div>
+                    </div> 
+
+
+                    <Volunteer></Volunteer>
+                      </div>
+                    </div>
+
+
+
+
+
+
 <Routes>
       <Route path="/Home" element={<App />} />
                         <Route path="/About" element={<About></About>} />

@@ -1,0 +1,97 @@
+.our_volunteer_area {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.our_volunteer_area .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* مسافة بين العناصر */
+}
+
+.our_volunteer_area .single_volunteer {
+    flex: 1 1 calc(33.333% - 20px); /* اجعل كل عنصر يأخذ ثلث العرض مع احتساب المسافة بين العناصر */
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.our_volunteer_area .single_volunteer .volunteer_thumb {
+    padding-right: 0; /* إزالة البادينج */
+    padding-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.our_volunteer_area .single_volunteer .volunteer_thumb img {
+    width: 100%;
+    height: auto; /* تأكد من أن الصورة تتناسب بشكل صحيح */
+    border-radius: 7px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.our_volunteer_area .single_volunteer .volunteer_thumb:hover img {
+    transform: scale(1.05); /* تكبير الصورة عند التمرير */
+}
+
+.our_volunteer_area .single_volunteer .volunteer_info {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 7px;
+    padding: 15px;
+    background: #fff;
+    text-align: center; /* تنسيق النص في الوسط */
+    position: relative;
+    z-index: 2;
+}
+
+.our_volunteer_area .single_volunteer .volunteer_info h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.our_volunteer_area .single_volunteer .volunteer_info p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.our_volunteer_area .single_volunteer .volunteer_info .social_links {
+    margin-top: 15px;
+}
+
+.our_volunteer_area .single_volunteer .volunteer_info .social_links ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.our_volunteer_area .single_volunteer .volunteer_info .social_links ul li {
+    margin-bottom: 0;
+}
+
+.our_volunteer_area .single_volunteer .volunteer_info .social_links ul li a {
+    color: #555;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.our_volunteer_area .single_volunteer .volunteer_info .social_links ul li a:hover {
+    color: #007bff;
+}
+
+@media (max-width: 991px) {
+    .our_volunteer_area .single_volunteer {
+        flex: 1 1 calc(50% - 20px); /* نصف العرض في الشاشات الأصغر */
+    }
+}
+
+@media (max-width: 767px) {
+    .our_volunteer_area .single_volunteer {
+        flex: 1 1 100%; /* كامل العرض في الشاشات الأصغر */
+    }
+}
