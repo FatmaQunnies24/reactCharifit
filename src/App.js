@@ -16,6 +16,7 @@ import Activities from './Pages/Activities';
 import CausesList from './Pages/CausesList';
 import Statistic from './Pages/Statistic';
 import Volunteer from './Pages/Volunteer';
+import News from './Pages/News';
 
 import ReasonOfHelping from './ReasonOfHelping';
 import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
@@ -196,6 +197,28 @@ useEffect(() => {
 
 
 
+
+
+
+
+
+
+                    <div class="news__area section_padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center mb-55">
+                        <h3><span>News & Updates</span></h3>
+                    </div>
+                </div>
+            </div>
+           
+        
+                  <News></News>
+    </div>
+</div>
+
+   
 
 
 <Routes>
