@@ -1,4 +1,3 @@
-/* تنسيق عام لمنطقة التبرعات */
 .make_donation_area {
     padding: 100px 0;
     background: #f9f9f9;
@@ -10,12 +9,11 @@
     color: #333;
 }
 
-/* Flexbox لتنسيق الحقول جنباً إلى جنب */
 .make_donation_area .donation_form .row.align-items-center {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* وضع العناصر في المنتصف */
-    gap: 10%; /* المسافة بين الأعمدة */
+    justify-content: center;
+    gap: 10%;
 }
 
 .make_donation_area .donation_form .col-md-4,
@@ -24,11 +22,11 @@
 }
 
 .make_donation_area .donation_form .col-md-4 {
-    max-width: 20%; /* عرض العمود الأيسر 20% */
+    max-width: 20%;
 }
 
 .make_donation_area .donation_form .col-md-8 {
-    max-width: 40%; /* عرض العمود الأيمن 40% */
+    max-width: 40%;
 }
 
 .make_donation_area .donation_form .input_field .input-group {
@@ -38,7 +36,7 @@
     padding: 5px 10px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     display: flex;
-    align-items: center; /* محاذاة العناصر عمودياً */
+    align-items: center;
 }
 
 .make_donation_area .donation_form .input_field .input-group .input-group-text {
@@ -47,8 +45,8 @@
     border: 0;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
-    margin-right: 10px; /* إضافة مساحة بين العلامة ومكان الإدخال */
-    transform: translateY(5px); /* نقل العلامة لأسفل */
+    margin-right: 10px;
+    transform: translateY(5px);
 }
 
 .make_donation_area .donation_form .input_field .input-group .form-control {
@@ -57,7 +55,6 @@
     padding-right: 0px;
     height: 50px;
     font-family: "Open Sans", sans-serif;
-    /* font-size: 16px; */
     color: #000;
 }
 
@@ -73,7 +70,6 @@
     box-shadow: none;
 }
 
-/* تنسيق لحقل المبلغ الثابت */
 .make_donation_area .donation_form .single_amount .fixed_donat {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     padding: 18px 27px;
@@ -100,7 +96,6 @@
     margin-bottom: 0;
 }
 
-/* تنسيق للزر Donate Now */
 .make_donation_area .donate_now_btn {
     margin-top: 50px;
     text-align: center;
@@ -121,13 +116,11 @@
 .make_donation_area .donate_now_btn .boxed-btn4:hover {
     background: #333;
 }
-.single_doonate{
+
+.single_doonate {
     padding-top: 15px;
 }
-/* .select_prise{
-    padding-bottom: 51px;
-} */
-/* تنسيق خاص للشاشات الصغيرة */
+
 @media (max-width: 767px) {
     .make_donation_area .donation_form .col-md-4,
     .make_donation_area .donation_form .col-md-8 {
