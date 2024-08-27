@@ -1,0 +1,148 @@
+/* تنسيق عام لمنطقة التبرعات */
+.make_donation_area {
+    padding: 100px 0;
+    background: #f9f9f9;
+}
+
+.make_donation_area .section_title h3 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Flexbox لتنسيق الحقول جنباً إلى جنب */
+.make_donation_area .donation_form .row.align-items-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* وضع العناصر في المنتصف */
+    gap: 10%; /* المسافة بين الأعمدة */
+}
+
+.make_donation_area .donation_form .col-md-4,
+.make_donation_area .donation_form .col-md-8 {
+    flex: 0 0 auto;
+}
+
+.make_donation_area .donation_form .col-md-4 {
+    max-width: 20%; /* عرض العمود الأيسر 20% */
+}
+
+.make_donation_area .donation_form .col-md-8 {
+    max-width: 40%; /* عرض العمود الأيمن 40% */
+}
+
+.make_donation_area .donation_form .input_field .input-group {
+    width: 100%;
+    border: 1px solid #3CC78F;
+    border-radius: 7px;
+    padding: 5px 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    display: flex;
+    align-items: center; /* محاذاة العناصر عمودياً */
+}
+
+.make_donation_area .donation_form .input_field .input-group .input-group-text {
+    font-size: 16px;
+    background: transparent;
+    border: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    margin-right: 10px; /* إضافة مساحة بين العلامة ومكان الإدخال */
+    transform: translateY(5px); /* نقل العلامة لأسفل */
+}
+
+.make_donation_area .donation_form .input_field .input-group .form-control {
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    border: 0;
+    padding-right: 0px;
+    height: 50px;
+    font-family: "Open Sans", sans-serif;
+    /* font-size: 16px; */
+    color: #000;
+}
+
+.make_donation_area .donation_form .input_field .input-group .form-control::placeholder {
+    font-size: 16px;
+    color: #7A7B7C;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+.make_donation_area .donation_form .input_field .input-group .form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* تنسيق لحقل المبلغ الثابت */
+.make_donation_area .donation_form .single_amount .fixed_donat {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    padding: 18px 27px;
+    border-radius: 7px;
+    border: 1px solid #3CC78F;
+    display: block;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.make_donation_area .donation_form .single_amount .fixed_donat .select_prise h4 {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: #7A7B7C;
+    margin-bottom: 0;
+}
+
+.make_donation_area .donation_form .single_amount .fixed_donat .single_doonate label {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #7A7B7C;
+    margin-bottom: 0;
+}
+
+/* تنسيق للزر Donate Now */
+.make_donation_area .donate_now_btn {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.make_donation_area .donate_now_btn .boxed-btn4 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background: #3CC78F;
+    padding: 12px 30px;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.make_donation_area .donate_now_btn .boxed-btn4:hover {
+    background: #333;
+}
+.single_doonate{
+    padding-top: 15px;
+}
+/* .select_prise{
+    padding-bottom: 51px;
+} */
+/* تنسيق خاص للشاشات الصغيرة */
+@media (max-width: 767px) {
+    .make_donation_area .donation_form .col-md-4,
+    .make_donation_area .donation_form .col-md-8 {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+
+    .make_donation_area .donation_form .single_amount .fixed_donat {
+        display: block !important;
+        margin-top: 15px;
+    }
+
+    .make_donation_area .donation_form .single_amount .fixed_donat .single_doonate {
+        width: 33.33%;
+        float: left;
+        margin-top: 15px;
+    }
+}

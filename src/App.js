@@ -17,6 +17,7 @@ import CausesList from './Pages/CausesList';
 import Statistic from './Pages/Statistic';
 import Volunteer from './Pages/Volunteer';
 import News from './Pages/News';
+import Donation from './Pages/Donation';
 
 import ReasonOfHelping from './ReasonOfHelping';
 import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
@@ -219,6 +220,16 @@ useEffect(() => {
 </div>
 
    
+
+
+
+
+
+
+
+<Donation></Donation>
+
+
 
 
 <Routes>
