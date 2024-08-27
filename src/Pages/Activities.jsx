@@ -78,7 +78,7 @@ function Activities() {
                                     </h3>
                                 </div>
                                 <p className="para_1">{activities.desc}</p>
-                                <button> <a href="#" data-scroll-nav="1" className="boxed-btn4">Donate Now</a></button>
+                                <button className='but'> <a href="#" data-scroll-nav="1" className="boxed-btn4">Donate Now</a></button>
                             </div>
                         </div>
                     </div>

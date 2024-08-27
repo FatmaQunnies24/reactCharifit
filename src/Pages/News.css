@@ -1,0 +1,95 @@
+.news__area {
+    background: #F3FCF8;
+    padding: 40px 0;
+    overflow-x: auto; /* تمكين التمرير الأفقي */
+    display: flex; /* جعل العناصر جنبًا إلى جنب */
+    gap: 20px; /* مسافة بين عناصر الأخبار */
+    padding-left: 5%; /* إبعاد العناصر عن الحافة اليسرى */
+    padding-right: 10%; /* إبعاد العناصر عن الحافة اليمنى */
+    scroll-behavior: smooth; /* تمكين التمرير السلس */
+}
+
+.news__area::-webkit-scrollbar {
+    display: none; /* إخفاء شريط التمرير */
+}
+
+.news__area .single__blog {
+    width: 40%; /* عرض كل عنصر خبر */
+    background: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 7px;
+    overflow: hidden;
+    flex-shrink: 0; /* منع العناصر من التقلص */
+    display: flex; /* جعل النص والصورة جنبًا إلى جنب */
+    align-items: center;
+}
+
+.single__blog .thum {
+    width: 50%; /* نصف العرض للصور */
+    height: 100%;
+    overflow: hidden;
+}
+
+.single__blog .thum img {
+    width: 100%; /* ملء الصورة للعرض الكامل */
+    height: auto;
+    display: block;
+}
+
+.single__blog .newsinfo {
+    padding: 20px;
+    width: 50%; /* نصف العرض للنص */
+    text-align: left;
+}
+
+.newsinfo span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #222222;
+    font-family: "Open Sans", sans-serif;
+}
+
+.newsinfo h3 {
+    font-size: 20px;
+    color: #222222;
+    margin-top: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+}
+
+.newsinfo p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #7A7B7C;
+    margin: 15px 0;
+}
+
+.newsinfo .read_more {
+    font-size: 14px;
+    font-weight: 600;
+    color: #009688;
+    text-decoration: none;
+}
+
+.newsinfo .read_more:hover {
+    text-decoration: underline;
+}
+
+/* تحسين الاستجابة على الشاشات الصغيرة */
+@media (max-width: 767px) {
+    .news__area {
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .news__area .single__blog {
+        width: 100%; /* تكبير عرض العنصر على الشاشات الصغيرة */
+        flex-direction: column; /* جعل الصورة والنص فوق بعض */
+    }
+
+    .single__blog .thum, 
+    .single__blog .newsinfo {
+        width: 100%; /* ملء الشاشة للصورة والنص */
+    }
+}

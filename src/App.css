@@ -287,3 +287,40 @@
 .causes_active::-webkit-scrollbar-thumb {
   background-color: transparent;
 }
+
+
+
+
+
+
+
+
+
+/* 0
+0
+0
+0
+0
+0
+0
+ */
+
+
+ .our_volunteer_area  {
+  position: relative;
+  /* display: flex; */
+  padding: 0;
+  /* width: 100%; */
+  height: 20%;
+
+}
+
+
+.news__area  {
+  position: relative;
+  /* display: flex; */
+  padding: 0;
+  width: 100%;
+  height: 65%;
+
+}

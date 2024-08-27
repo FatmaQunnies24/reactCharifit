@@ -1,0 +1,115 @@
+.our_volunteer_area {
+    margin-top: -100px;
+    /* background-color: #f9f9f9; */
+}
+
+.col-lg-4 {
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 80%;
+    justify-content: space-between;
+    gap: 10%;
+    margin-left: 10%;
+
+
+}
+
+.single_volunteer {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10%;
+    margin-bottom: 10%; 
+    /* text-align: center; */
+
+  }
+  
+.our_volunteer_area .single_volunteer {
+display: flex;  
+  box-sizing: border-box;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: visible;
+}
+
+.our_volunteer_area .single_volunteer .volunteer_thumb {
+    position: absolute;
+    top: -30px;
+    right: 50px;
+    width: calc(100% + 40px);
+    z-index: 1;
+    
+    padding-right: 0;
+    /* padding-bottom: 20px; */
+    /* overflow: hidden; */
+    /* border-bottom: 1px solid #ddd; */
+}
+
+.our_volunteer_area .single_volunteer .volunteer_thumb img {
+    width: 80%;
+    height: auto;
+    border-radius: 7px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.our_volunteer_area .single_volunteer .volunteer_thumb:hover img {
+    transform: scale(1.05);
+}
+
+.our_volunteer_area .single_volunteer .volunteer_info {
+    /* padding: 20px; */
+    background: #fff;
+    /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); */
+    border-radius: 7px;
+    position: relative;
+    /* z-index: 2; */
+    margin-top: 150px;
+    
+    text-align: center;
+}
+
+.our_volunteer_area .single_volunteer .volunteer_info h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+        height: 50%;
+
+    color: #333;
+}
+
+.our_volunteer_area .single_volunteer .volunteer_info p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.our_volunteer_area .single_volunteer .volunteer_info .social_links {
+    position: absolute;
+    right: -60px;
+    top: -90%;
+    transform: translateY(-60%);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.our_volunteer_area .single_volunteer .volunteer_info .social_links ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 100px;
+}
+
+.our_volunteer_area .single_volunteer .volunteer_info .social_links ul li {
+    margin-bottom: 10px;
+}
+
+.our_volunteer_area .single_volunteer .volunteer_info .social_links ul li a {
+    color: #555;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.our_volunteer_area .single_volunteer .volunteer_info .social_links ul li a:hover {
+    color: #007bff;
+}
