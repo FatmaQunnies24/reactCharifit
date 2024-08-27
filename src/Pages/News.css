@@ -1,44 +1,44 @@
 .news__area {
     background: #F3FCF8;
     padding: 40px 0;
-    overflow-x: auto; /* تمكين التمرير الأفقي */
-    display: flex; /* جعل العناصر جنبًا إلى جنب */
-    gap: 20px; /* مسافة بين عناصر الأخبار */
-    padding-left: 5%; /* إبعاد العناصر عن الحافة اليسرى */
-    padding-right: 10%; /* إبعاد العناصر عن الحافة اليمنى */
-    scroll-behavior: smooth; /* تمكين التمرير السلس */
+    overflow-x: auto;
+    display: flex;
+    gap: 20px;
+    padding-left: 5%;
+    padding-right: 10%;
+    scroll-behavior: smooth;
 }
 
 .news__area::-webkit-scrollbar {
-    display: none; /* إخفاء شريط التمرير */
+    display: none;
 }
 
 .news__area .single__blog {
-    width: 40%; /* عرض كل عنصر خبر */
+    width: 40%;
     background: #fff;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     border-radius: 7px;
     overflow: hidden;
-    flex-shrink: 0; /* منع العناصر من التقلص */
-    display: flex; /* جعل النص والصورة جنبًا إلى جنب */
+    flex-shrink: 0;
+    display: flex;
     align-items: center;
 }
 
 .single__blog .thum {
-    width: 50%; /* نصف العرض للصور */
+    width: 50%;
     height: 100%;
     overflow: hidden;
 }
 
 .single__blog .thum img {
-    width: 100%; /* ملء الصورة للعرض الكامل */
+    width: 100%;
     height: auto;
     display: block;
 }
 
 .single__blog .newsinfo {
     padding: 20px;
-    width: 50%; /* نصف العرض للنص */
+    width: 50%;
     text-align: left;
 }
 
@@ -75,7 +75,6 @@
     text-decoration: underline;
 }
 
-/* تحسين الاستجابة على الشاشات الصغيرة */
 @media (max-width: 767px) {
     .news__area {
         flex-direction: column;
@@ -84,12 +83,12 @@
     }
 
     .news__area .single__blog {
-        width: 100%; /* تكبير عرض العنصر على الشاشات الصغيرة */
-        flex-direction: column; /* جعل الصورة والنص فوق بعض */
+        width: 100%;
+        flex-direction: column;
     }
 
     .single__blog .thum, 
     .single__blog .newsinfo {
-        width: 100%; /* ملء الشاشة للصورة والنص */
+        width: 100%;
     }
 }
