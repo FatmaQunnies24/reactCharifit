@@ -186,9 +186,10 @@ useEffect(() => {
                     </div>
                     </div>
                     </div> 
+                    <div class="volunteer-list">
+      <Volunteer />
 
-
-                    <Volunteer></Volunteer>
+    </div>
                       </div>
                     </div>
 

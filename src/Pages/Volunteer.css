@@ -1,53 +1,80 @@
 .our_volunteer_area {
-    padding: 80px 0;
-    background-color: #f9f9f9;
+    margin-top: -100px;
+    /* background-color: #f9f9f9; */
 }
 
-.our_volunteer_area .row {
+.col-lg-4 {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* مسافة بين العناصر */
+    /* flex-wrap: wrap; */
+    width: 80%;
+    justify-content: space-between;
+    gap: 10%;
+    margin-left: 10%;
+
+
 }
 
+.single_volunteer {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10%;
+    margin-bottom: 10%; 
+    /* text-align: center; */
+
+  }
+  
 .our_volunteer_area .single_volunteer {
-    flex: 1 1 calc(33.333% - 20px); /* اجعل كل عنصر يأخذ ثلث العرض مع احتساب المسافة بين العناصر */
-    box-sizing: border-box;
+display: flex;  
+  box-sizing: border-box;
     margin-bottom: 30px;
+    position: relative;
+    overflow: visible;
 }
 
 .our_volunteer_area .single_volunteer .volunteer_thumb {
-    padding-right: 0; /* إزالة البادينج */
-    padding-bottom: 20px;
-    position: relative;
-    overflow: hidden;
+    position: absolute;
+    top: -30px;
+    right: 50px;
+    width: calc(100% + 40px);
+    z-index: 1;
+    
+    padding-right: 0;
+    /* padding-bottom: 20px; */
+    /* overflow: hidden; */
+    /* border-bottom: 1px solid #ddd; */
 }
 
 .our_volunteer_area .single_volunteer .volunteer_thumb img {
-    width: 100%;
-    height: auto; /* تأكد من أن الصورة تتناسب بشكل صحيح */
+    width: 80%;
+    height: auto;
     border-radius: 7px;
     transition: transform 0.3s ease-in-out;
 }
 
 .our_volunteer_area .single_volunteer .volunteer_thumb:hover img {
-    transform: scale(1.05); /* تكبير الصورة عند التمرير */
+    transform: scale(1.05);
 }
 
 .our_volunteer_area .single_volunteer .volunteer_info {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-    border-radius: 7px;
-    padding: 15px;
+    /* padding: 20px; */
     background: #fff;
-    text-align: center; /* تنسيق النص في الوسط */
+    /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); */
+    border-radius: 7px;
     position: relative;
-    z-index: 2;
+    /* z-index: 2; */
+    margin-top: 150px;
+    
+    text-align: center;
 }
 
 .our_volunteer_area .single_volunteer .volunteer_info h4 {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px;
+        height: 50%;
+
     color: #333;
 }
 
@@ -58,20 +85,23 @@
 }
 
 .our_volunteer_area .single_volunteer .volunteer_info .social_links {
-    margin-top: 15px;
+    position: absolute;
+    right: -60px;
+    top: -90%;
+    transform: translateY(-60%);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .our_volunteer_area .single_volunteer .volunteer_info .social_links ul {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding: 0;
     list-style: none;
-    margin: 0;
+    padding: 0;
+    margin-top: 100px;
 }
 
 .our_volunteer_area .single_volunteer .volunteer_info .social_links ul li {
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
 .our_volunteer_area .single_volunteer .volunteer_info .social_links ul li a {
@@ -82,16 +112,4 @@
 
 .our_volunteer_area .single_volunteer .volunteer_info .social_links ul li a:hover {
     color: #007bff;
-}
-
-@media (max-width: 991px) {
-    .our_volunteer_area .single_volunteer {
-        flex: 1 1 calc(50% - 20px); /* نصف العرض في الشاشات الأصغر */
-    }
-}
-
-@media (max-width: 767px) {
-    .our_volunteer_area .single_volunteer {
-        flex: 1 1 100%; /* كامل العرض في الشاشات الأصغر */
-    }
 }

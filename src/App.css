@@ -306,74 +306,13 @@
  */
 
 
- .our_volunteer_area .single_volenteer {
+ .our_volunteer_area  {
   position: relative;
-  display: flex;
+  /* display: flex; */
+  padding: 0;
+  /* width: 100%; */
+  height: 20%;
+
 }
 
-@media (max-width: 767px) {
-  /* line 2, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_voolenteer.scss */
-  .our_volunteer_area .single_volenteer {
-    margin-bottom: 30px;
-  }
-}
 
-@media (min-width: 768px) and (max-width: 991px) {
-  /* line 2, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_voolenteer.scss */
-  .our_volunteer_area .single_volenteer {
-    margin-bottom: 30px;
-  }
-}
-
-/* line 10, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_voolenteer.scss */
-.our_volunteer_area .single_volenteer .volenteer_thumb {
-  padding-right: 70px;
-  padding-bottom: 90px;
-  position: relative;
-  z-index: 12;
-  overflow: hidden;
-}
-
-/* line 17, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_voolenteer.scss */
-.our_volunteer_area .single_volenteer .volenteer_thumb img {
-  width: 100%;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  border-radius: 7px;
-}
-
-/* line 22, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_voolenteer.scss */
-.our_volunteer_area .single_volenteer .voolenteer_info {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  border-radius: 7px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  background: #fff;
-  left: 40px;
-  top: 90px;
-}
-
-/* line 31, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_voolenteer.scss */
-.our_volunteer_area .single_volenteer .voolenteer_info .info_inner {
-  padding: 20px 40px;
-  position: relative;
-  z-index: 100;
-}
-
-/* line 35, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_voolenteer.scss */
-.our_volunteer_area .single_volenteer .voolenteer_info .info_inner h4 {
-  font-size: 20px;
-  margin-bottom: 2px;
-}
-.single_volunteer {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  margin-bottom: 20px; /* مسافة بين البطاقات */
-  text-align: center;
-}

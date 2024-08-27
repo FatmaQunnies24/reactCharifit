@@ -2,7 +2,7 @@
     width: 80%;
     height: 20vh; /* تقليل ارتفاع العنصر إلى 20% من ارتفاع العرض */
     position: relative;
-    margin: 0 auto; /* Center the container horizontally */
+    margin: 10% 20%; /* Center the container horizontally */
     padding: 0 40px; /* Add padding to the left and right sides */
 }
 
@@ -15,10 +15,12 @@
     padding: 16px 0; /* Adjust padding for the new height */
     background-size: cover;
     position: absolute; /* Position it within the counter_area */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    justify-content: center;
+
+    /* top: 0;
+    left: 0; */
+    /* width: 100%;
+    height: 100%; */
 }
 
 .counter_area .overlay::before {
