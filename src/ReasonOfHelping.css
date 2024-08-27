@@ -1,7 +1,10 @@
 .reson_area .single_reson {
     position: relative;
   }
-  
+  .row{
+        justify-content: center;
+
+  }
   @media (max-width: 767px) {
     /* line 2, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_reason.scss */
     .reson_area .single_reson {
@@ -161,7 +164,7 @@
     -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-    padding: 47px 40px 33px 40px;
+    padding: 47px 15px 33px 15px;
     left: 46px;
   }
   

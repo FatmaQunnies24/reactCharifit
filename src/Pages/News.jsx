@@ -54,7 +54,10 @@ function News() {
                     <span>{item.date}</span>
                     <h3>{item.name}</h3>
                     <p>{item.desc}</p>
-                    <a className="read_more" href="single-blog.html">Read More</a>
+                   
+                    <Link to="/SingleBlog" className="read_more" style={{ marginLeft: 0 }}>   Read More
+                    </Link>
+
                 </div>
             </div>
         ))}
