@@ -102,6 +102,28 @@ function NavPar(props) {
                         <h1 className='contacth1' style={{ textAlign: "center", marginTop: "10%" }}>Causes</h1>
                     </div>
                 </div>
+            ) : props.type === 'Contact' ? (
+                <div className='contact'>
+                    <div
+                        className="hero-section d-flex align-items-center slider_bg_1 overlay2"
+                        style={{ backgroundImage: `url(${props.img})` }}
+                    >
+                        <h2><br /></h2>
+                        <h2><br /></h2>
+                        <h1 className='contacth1' style={{ textAlign: "center", marginTop: "10%" }}>Causes</h1>
+                    </div>
+                </div>
+            ) :  props.type === 'Blog' ? (
+                <div className='contact'>
+                    <div
+                        className="hero-section d-flex align-items-center slider_bg_1 overlay2"
+                        style={{ backgroundImage: `url(${props.img})` }}
+                    >
+                        <h2><br /></h2>
+                        <h2><br /></h2>
+                        <h1 className='contacth1' style={{ textAlign: "center", marginTop: "10%" }}>Causes</h1>
+                    </div>
+                </div>
             ) : null}
         </header>
     );

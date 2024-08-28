@@ -98,7 +98,7 @@ function Contact() {
   }, []);
   return (
     <>
-      <NavPar />
+      <NavPar  img="/images/boyImg.png" type="Contact"/>
       <LoadScript googleMapsApiKey={mapApiKey}>
         <GoogleMap
           mapContainerStyle={mapContainerStyle}
@@ -204,7 +204,7 @@ function Contact() {
         </div>
       </section>
       
-<Footer></Footer>
+<Footer ></Footer>
 
     </>
   );

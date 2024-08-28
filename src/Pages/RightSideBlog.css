@@ -1,0 +1,275 @@
+.blog_right_sidebar .widget_title {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  
+  /* line 652, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+  .blog_right_sidebar .widget_title::after {
+    content: "";
+    display: block;
+    padding-top: 15px;
+    border-bottom: 1px solid #f0e9ff;
+  }
+  
+  /* line 660, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+  .blog_right_sidebar .single_sidebar_widget {
+    background: #fbf9ff;
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+  
+  /* line 664, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+  .blog_right_sidebar .single_sidebar_widget .btn_1 {
+    margin-top: 0px;
+  }
+  
+  /* line 672, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+  .blog_right_sidebar .search_widget .form-control {
+    height: 50px;
+    border-color: #f0e9ff;
+    font-size: 13px;
+    color: #999999;
+    /* padding-left: 20px; */
+    border-radius: 0;
+    border-right: 0;
+  }
+  
+  /* line 681, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+  .blog_right_sidebar .search_widget .form-control::placeholder {
+    color: #999999;
+  }
+  
+  /* line 685, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+  .blog_right_sidebar .search_widget .form-control:focus {
+    border-color: #f0e9ff;
+    outline: 0;
+    box-shadow: none;
+  }
+  
+  /* line 694, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+  .blog_right_sidebar .search_widget .input-group button {
+    background: #fff;
+    border-left: 0;
+    border: 1px solid #0e9925;
+    /* padding: 4px 15px; */
+    border-left: 0;
+  }
+  
+  /* line 701, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+  .blog_right_sidebar .search_widget .input-group button i,
+  .blog_right_sidebar .search_widget .input-group button span {
+    font-size: 14px;
+    color: #999999;
+  }
+  
+  /* line 713, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+  .blog_right_sidebar .newsletter_widget .form-control {
+    height: 50px;
+    border-color: #f0e9ff;
+    font-size: 13px;
+    color: #999999;
+    padding-left: 20px;
+    border-radius: 0;
+  }
+  
+  /* line 722, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+  .blog_right_sidebar .newsletter_widget .form-control::placeholder {
+    color: #999999;
+  }
+  
+  /* line 726, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+  .blog_right_sidebar .newsletter_widget .form-control:focus {
+    border-color: #f0e9ff;
+    outline: 0;
+    box-shadow: none;
+  }
+  
+  /* line 735, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+  .blog_right_sidebar .newsletter_widget .input-group button {
+    background: #fff;
+    border-left: 0;
+    border: 1px solid #27882c;
+    /* padding: 4px 15px; */
+    border-left: 0;
+  }
+  
+  /* line 742, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+  .blog_right_sidebar .newsletter_widget .input-group button i,
+  .blog_right_sidebar .newsletter_widget .input-group button span {
+    font-size: 14px;
+    color: #999999;
+  }
+  
+  /* line 755, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+  .blog_right_sidebar .post_category_widget .cat-list li {
+    border-bottom: 1px solid #f0e9ff;
+    transition: all 0.3s ease 0s;
+    padding-bottom: 12px;
+  }
+  
+  /* line 760, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+  .blog_right_sidebar .post_category_widget .cat-list li:last-child {
+    border-bottom: 0;
+  }
+  
+  /* line 764, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+  .blog_right_sidebar .post_category_widget .cat-list li a {
+    font-size: 14px;
+    line-height: 20px;
+    color: #888888;
+  }
+  
+  /* line 769, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+  .blog_right_sidebar .post_category_widget .cat-list li a p {
+    margin-bottom: 0px;
+  }
+  
+  /* line 774, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+  .blog_right_sidebar .post_category_widget .cat-list li + li {
+    padding-top: 15px;
+  }
+  
+  /* line 791, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+  .blog_right_sidebar .popular_post_widget .post_item .media-body {
+    justify-content: center;
+    align-self: center;
+    padding-left: 20px;
+  }
+  
+  /* line 796, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+  .blog_right_sidebar .popular_post_widget .post_item .media-body h3 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 6px;
+    transition: all 0.3s linear;
+  }
+  
+  /* line 807, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+  .blog_right_sidebar .popular_post_widget .post_item .media-body a:hover {
+    color: #fff;
+  }
+  
+  /* line 813, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+  .blog_right_sidebar .popular_post_widget .post_item .media-body p {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 0px;
+  }
+  
+  /* line 820, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+  .blog_right_sidebar .popular_post_widget .post_item + .post_item {
+    margin-top: 20px;
+  }
+  
+  /* line 828, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+  .blog_right_sidebar .tag_cloud_widget ul li {
+    display: inline-block;
+  }
+  
+  /* line 831, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+  .blog_right_sidebar .tag_cloud_widget ul li a {
+    display: inline-block;
+    border: 1px solid #eeeeee;
+    background: #fff;
+    padding: 4px 20px;
+    margin-bottom: 8px;
+    margin-right: 3px;
+    transition: all 0.3s ease 0s;
+    color: #888888;
+    font-size: 13px;
+  }
+  
+  /* line 842, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+  .blog_right_sidebar .tag_cloud_widget ul li a:hover {
+    background: #3CC78F;
+    color: #fff !important;
+    -webkit-text-fill-color: #fff;
+    text-decoration: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  /* line 857, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+  .blog_right_sidebar .instagram_feeds .instagram_row {
+    display: flex;
+    /* margin-right: -6px;
+    margin-left: -6px; */
+  }
+  
+  /* line 863, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+  .blog_right_sidebar .instagram_feeds .instagram_row li {
+    width: 33.33%;
+    float: left;
+    padding-right: 6px;
+    padding-left: 6px;
+    margin-bottom: 15px;
+  }
+  .instagram_row li{
+    display: flex;
+  }
+  /* line 963, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+  .blog_right_sidebar .br {
+    width: 100%;
+    height: 1px;
+    background: #eeeeee;
+    margin: 30px 0px;
+  }
+  .blog_part .blog_right_sidebar .widget_title {
+    font-size: 20px;
+    margin-bottom: 40px;
+    font-style: inherit !important;
+  }  
+  .blog_right_sidebar .single_sidebar_widget {
+    background: #fbf9ff;
+    padding: 30px;
+    margin-bottom: 30px;
+    margin-right: 10%;
+    width: 100%;
+    margin-top: 10%;
+  }
+  
+  /* line 664, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+  .blog_right_sidebar .single_sidebar_widget .btn_1 {
+    margin-top: 0px;
+  }
+.list  li{
+    list-style-type: none;
+ margin-right: 5px;
+  }
+  .d-flex{
+    display: flex;
+   
+  }
+  .buttond {
+    width: 100%; /* عرض البوتون */
+    padding: 10px; /* المسافة الداخلية */
+    background-color: #ffffff; /* لون الخلفية */
+    color: #28a745; /* لون النص */
+    border: 1px solid #28a745;    border-radius: 0px; /* زوايا مستديرة */
+    font-size: 16px; /* حجم الخط */
+    cursor: pointer; /* تغيير المؤشر عند المرور */
+    transition: background-color 0.3s ease; /* تأثير تغيير اللون */
+}
+
+button:hover {
+    background-color: #218838; /* لون الخلفية عند المرور */
+}
+.single_sidebar_widgett .instagram_roww {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.single_sidebar_widgett .instagram_roww li {
+  width: 33.33%; /* يجعل كل عنصر يشغل ثلث العرض */
+  padding: 5px; /* لإضافة مسافة بين الصور */
+  box-sizing: border-box; /* لضمان أن الحواف لا تؤثر على العرض */
+}
+
+.single_sidebar_widgett .img-fluidd {
+  width: 100%;
+  height: auto;
+  display: block;
+}
