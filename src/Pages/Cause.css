@@ -1,0 +1,156 @@
+/* لتحديد الصورة وتكبيرها في قائمة القضايا */
+.popular_causes_area-new .single_cause .thumb img {
+    width: 100%;
+    transform: scale(1);
+    transition: 0.3s;
+}
+
+.causes_active-new  {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+
+/* ضبط العنصر الفردي ليكون بعرض مناسب */
+.causes_active-new .single_cause {
+    flex: 0 0 25%; /* يعني أن كل عنصر سيأخذ 32% من العرض الإجمالي للحاوية */
+    box-sizing: border-box;
+    margin-bottom: 20px; /* مساحة بين العناصر العمودية */
+    margin-top: 5%;
+    justify-content: space-between;
+    margin-left: 5%;
+}
+
+@media (max-width: 991px) {
+    .popular_causes_area-new .single_cause {
+        flex: 0 0 48%; /* عند العرض المتوسط، سيكون لكل عنصر عرض 48% */
+    }
+}
+
+@media (max-width: 767px) {
+    .popular_causes_area-new .single_cause {
+        flex: 0 0 100%; /* عند العرض الصغير، سيكون كل عنصر بعرض 100% */
+    }
+}
+
+/* لتحديد محتوى القضايا وضبط التنسيق */
+.popular_causes_area-new .single_cause .causes_content {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    padding: 30px 30px 34px 30px;
+    position: relative;
+    border-radius: 0 0px 7px 7px;
+}
+
+/* شريط التقدم المخصص */
+.popular_causes_area-new .single_cause .causes_content .custom_progress_bar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.popular_causes_area-new .single_cause .causes_content .custom_progress_bar .progress {
+    height: 12px;
+    font-size: 12px;
+    background-color: #FF4F42;
+    border-radius: 0;
+}
+
+.popular_causes_area-new .single_cause .causes_content .custom_progress_bar .progress .progress-bar {
+    background-color: #3CC78F;
+    position: relative;
+}
+.popular_causes_area-new .single_cause .causes_content .custom_progress_bar .progress .progress-bar .progres_count {
+    margin-bottom: 50%;
+    position: absolute;
+    right: 0;
+    width: 40px; /* حدد عرض الدائرة */
+    height: 60px; /* قلل ارتفاع الدائرة */
+    border-radius: 50%;
+    font-size: 25px; /* قلل حجم الخط */
+    background: #3CC78F;
+    line-height: 60px; /* تأكد من مطابقة ارتفاع الخط مع ارتفاع الدائرة */
+    margin-top: -20px; /* ضبط المسافة العلوية وفقاً للحجم الجديد */
+}
+
+@media (max-width: 767px) {
+    .popular_causes_area-new .single_cause .causes_content .custom_progress_bar .progress .progress-bar .progres_count {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 15px;
+    }
+}
+
+/* تنسيق التوازن */
+.popular_causes_area-new .single_cause .causes_content .balance {
+    padding-bottom: 20px;
+    margin-top: 35px;
+    border-bottom: 0;
+    padding-right: 5%;
+    justify-content: space-between;
+}
+
+.popular_causes_area-new .single_cause .causes_content span {
+  
+    padding-right: 15%;
+    justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+    .popular_causes_area-new .single_cause .causes_content .balance {
+        margin-bottom: 0;
+    }
+}
+
+.popular_causes_area-new .single_cause .causes_content .balance span {
+    font-size: 18px;
+    color: #222222;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* تنسيق العنوان */
+.popular_causes_area-new .single_cause .causes_content h4 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+
+}
+
+@media (max-width: 767px) {
+    .popular_causes_area-new .single_cause .causes_content h4 {
+        font-size: 25px;
+    }
+}
+
+/* تنسيق الوصف */
+.popular_causes_area-new .single_cause .causes_content p {
+    margin-bottom: 15px;
+    color: #7A7B7C;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+/* تأثير التحويل عند التمرير فوق الصورة */
+.popular_causes_area-new .single_cause:hover .thumb img {
+    transform: scale(1.05);
+}
+
+/* ضبط المسافة بين القضايا */
+.popular_causes_area-new .single_cause {
+    margin-bottom: 35px;
+}
+
+/* ضبط إعدادات الصورة المصغرة */
+.popular_causes_area-new .single_cause .thumb {
+    border-radius: 7px 7px 0 0;
+    overflow: hidden;
+}
+
+.popular_causes_area-new .single_cause .thumb img {
+    width: 100%;
+    transform: scale(1);
+    transition: 0.3s;
+}

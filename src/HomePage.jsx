@@ -1,4 +1,7 @@
 import './App.css';
+import './HomePage.css';
+// import '../src/Pages/CausesList.css';
+
 import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faPinterest, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
@@ -19,18 +22,70 @@ import Volunteer from './Pages/Volunteer';
 import News from './Pages/News';
 import Donation from './Pages/Donation';
 import Footer from './Pages/Footer';
+import NavPar from './Pages/NavPar';
+
 
 import ReasonOfHelping from './ReasonOfHelping';
 import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
 
 
 function HomePage (props){
-    const [phoneNumber,setPhoneNumber]=useState("+1 (454) 556-5656");
-const [email,setEmail]=useState(" Yourmail@gmail.com");
+
 const [reasonOfHelping,setReasonOfHelping]=useState([{"id":1,"name":"Collecting Fund","imgUrl":"1.png","desc":"Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print."},
   {"id":2,"name":"Blood Camp","imgUrl":"2.png","desc":"Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print."},
   {"id":3,"name":"Friendly Volunteer","imgUrl":"3.png","desc":"Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print."}]);
 
+
+
+
+  const [causesList, setCausesList] = useState([{
+    "name": "Clothes For Everyone",
+    "Raised": "$5000.00", 
+    "Goal": "$9000.00",
+    "pre":"30%",
+    "imgUrl":"/images/causes/5.png",
+
+    "smallDisc":"The passage is attributed to an unknown typesetter in the century who is thought",
+    "Disc":"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided."
+},
+{
+    "name": "Clothes For Everyone",
+    "Raised": "$5000.00", 
+    "Goal": "$9000.00",
+    "pre":"30%",
+    "imgUrl":"/images/causes/4.png",
+
+    "smallDisc":"The passage is attributed to an unknown typesetter in the century who is thought",
+    "Disc":"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided."
+},
+{
+    "name": "Clothes For Everyone",
+    "Raised": "$5000.00", 
+    "Goal": "$9000.00",
+    "pre":"30%",
+    "imgUrl":"/images/causes/3.png",
+
+    "smallDisc":"The passage is attributed to an unknown typesetter in the century who is thought",
+    "Disc":"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided."
+},
+{
+    "name": "Clothes For Everyone",
+    "Raised": "$5000.00", 
+    "Goal": "$9000.00",
+    "pre":"30%",
+    "imgUrl":"/images/causes/2.png",
+    "smallDisc":"The passage is attributed to an unknown typesetter in the century who is thought",
+    "Disc":"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided."
+},
+{
+    "name": "Clothes For Everyone",
+    "Raised": "$5000.00", 
+    "Goal": "$9000.00",
+    "pre":"30%",
+    "imgUrl":"/images/causes/1.png",
+    "smallDisc":"The passage is attributed to an unknown typesetter in the century who is thought",
+    "Disc":"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided."
+}]);
 
 
 
@@ -50,73 +105,7 @@ useEffect(() => {
   return (
     
     <div className="App">
-      <header className="App-header">
-        <div className="top-bar">
-          <div className="contact-info">
-          <span><FontAwesomeIcon icon={faPhone} /> {phoneNumber}</span>
-          <span><FontAwesomeIcon icon={faEnvelope} />{email}</span> </div>
-          <div className="social-icons">
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faFacebook} size="2x" />
-          </a>
-          <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faPinterest} size="2x" />
-          </a>
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faLinkedin} size="2x" />
-          </a>
-          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faTwitter} size="2x" />
-          </a>
-          </div>
-          </div>
-          <nav className="navbar">
-          <div className="logo">
-          <img src={logoImage} alt="Logo" />
-          </div>
-          <nav>
-                                    <ul id="navigation">
-                                        <li><Link to="/Home">home</Link></li>
-                                        <li><Link to="/About">about</Link></li>
-                                        <li> blog <FontAwesomeIcon icon={faAngleDown} />
-                                            <ul class="submenu">
-                                                <li><Link to="/Blog">blog</Link></li>
-                                                <li><Link to="/SingleBlog">single-blog</Link></li>
-                                            </ul>
-                                        </li>
-                                        <li>elements<FontAwesomeIcon icon={faAngleDown} />
-                                            <ul class="submenu">
-                                                <li><Link to="/Elements">elements</Link></li>
-                                                <li><Link to="/Cause">Cause</Link></li>
-                                            </ul>
-                                        </li>
-                                        <li><Link to="/Contact">Contact</Link></li>
-                                    </ul>
-                                </nav>
-          <button className="donate-button">Make a Donate</button>
-        </nav>
-        {props.type === 'home' ? (
-  <div
-    className="hero-section d-flex align-items-center slider_bg_1 overlay2"
-    style={{ backgroundImage: `url(${props.img})` }}
-  >
-    <h2><br /></h2>
-    <h2><br /></h2>
-    <h2>Get Started Today.</h2>
-    <h1>Help the children<br /></h1>
-    <p>With so much to consume and such little time, coming up<br />with relevant title ideas is essential.</p>
-    <Link to="/About" className="donate-button" style={{ marginLeft: 0 }}>
-      Learn more
-    </Link>
-  </div>
-) : <div className='about'> <div
-className="hero-section d-flex align-items-center slider_bg_1 overlay2"
-style={{ backgroundImage: `url(${props.img})` }}
->
-<h2><br /></h2>
-<h2><br /></h2>
-<h1 className='abouth1' style={{textAlign:"center",marginTop:"10%"}}>About Us</h1></div></div>}
-      </header>
+      <NavPar img="/images/boyImg.png"  type="home"></NavPar>
 
 
 
@@ -166,9 +155,17 @@ style={{ backgroundImage: `url(${props.img})` }}
                         </div>
                     </div>
                 </div>
-<CausesList></CausesList>
+                <div className="row">
+        <div className="col-lg-12">
+            <div className="causes_active owl-carousel">
+                {causesList.map((cause, index) => (
+                
+<CausesList list={causesList} cause={cause} index={index} ></CausesList>
 
-
+))}
+            </div>
+        </div>
+    </div>
                 </div>
                 </div>
 

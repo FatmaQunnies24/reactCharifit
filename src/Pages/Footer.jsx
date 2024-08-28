@@ -18,12 +18,12 @@ function Footer() {
     {
       name: "Pure Water Is More Essential",
       date: "July 18, 2019",
-      imgUrl: "/images/news/1.png",
+      imgUrl: "/images/news/news_2.png",
     },
     {
       name: "Pure Water Is More Essential",
       date: "July 18, 2019",
-      imgUrl: "/images/news/1.png",
+      imgUrl: "/images/news/news_1.png",
     }
   ]);
 

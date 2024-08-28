@@ -16,7 +16,7 @@ function App(props) {
  <div>
   {/* <HomePage img="/images/boyImg.png"></HomePage> */}
       <Routes>
-        <Route path="/" element={<HomePage img="/images/boyImg.png"  type="home"/>} />
+        <Route path="/Home" element={<HomePage img="/images/boyImg.png"  type="home"/>} />
         <Route path="/About" element={<HomePage img="/images/bradcam.png" type="about"/>} />
         <Route path="/Blog" element={<Blog />} />
         <Route path="/SingleBlog" element={<SingleBlog />} />
