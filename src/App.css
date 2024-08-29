@@ -302,3 +302,27 @@
   height: 65%;
 
 }
+
+
+
+
+
+
+.navbar ul#navigation li:hover > .submenu {
+  display: block;
+}
+
+.navbar ul#navigation li .submenu {
+  display: none; 
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background-color: #fff; 
+  z-index: 1000; 
+}
+
+/* إضافة نمط لعناصر القائمة المنسدلة لتظهر بشكل جيد */
+.navbar ul#navigation li .submenu li {
+  padding: 10px;
+  width: 200px; /* يمكنك تعديل العرض حسب الحاجة */
+}

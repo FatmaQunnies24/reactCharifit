@@ -107,7 +107,11 @@ useEffect(() => {
   return (
     
     <div className="App">
-      <NavPar img="/images/boyImg.png"  type="home"></NavPar>
+
+<NavPar 
+  img={props.img} 
+  type={props.type} 
+/>
 
 
 
@@ -125,7 +129,7 @@ useEffect(() => {
                     <div className="row justify-content-center">
                 <div className="col-lg-4 col-md-6">
                     <div className="single_reson">
-                    <div className="thum">
+                    <div className="thum" style={{display:"flex"}}>
                     {reasonOfHelping.map(reason => (
                         <ReasonOfHelping
                             key={reason.id}
@@ -212,11 +216,11 @@ useEffect(() => {
 
 
                     <div class="news__area section_padding">
-        <div class="container">
+        <div class="container"style={{width:"50%",marginLeft:"4%"}} >
             <div class="row justify-content-center">
-                <div class="col-lg-6">
+                <div class="col-lg-6" style={{marginLeft:"30%"}}>
                     <div class="section_title text-center mb-55">
-                        <h3><span>News & Updates</span></h3>
+                        <h3><span >News & Updates</span></h3>
                     </div>
                 </div>
             </div>
@@ -233,15 +237,15 @@ useEffect(() => {
 
 
 
-
-<Donation></Donation>
+<div id="nono">
+<Donation></Donation></div>
 
 
 <Footer></Footer>
 
 <Routes>
       <Route path="/Home" element={<HomePage />} />
-                        <Route path="/About" element={<About></About>} />
+                        <Route path="/About" element={<About img="/images/bradcam.png"/>} />
                         <Route path="/Blog" element={<Blog />} />
                         <Route path="/SingleBlog" element={<SingleBlog />} />
                         <Route path="/Elements" element={<Elements />} />

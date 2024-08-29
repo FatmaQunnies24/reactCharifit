@@ -112,18 +112,18 @@ function Contact() {
         />
       </LoadScript>
 
-      <section className="contact-section">
-        <div className="container">
+      <section className="contact-sectiong">
+        <div className="containerg">
           <div className="d-none d-sm-block mb-5 pb-4">
-            <div className="contact-container">
-              <div className="contact-form-container">
-                <h2 className="contact-title">Get in Touch</h2>
-                <form className="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" noValidate="novalidate">
-                  <div className="row">
-                    <div className="col-12">
-                      <div className="form-group">
+            <div className="contact-containerg">
+              <div className="contact-form-containerg">
+                <h2 className="contact-titleg">Get in Touch</h2>
+                <form className="form-contact contact_formg" action="contact_process.php" method="post" id="contactForm" noValidate="novalidate">
+                  <div className="rowg">
+                    <div className="col-12g">
+                      <div className="form-groupg">
                         <textarea 
-                          className="form-control w-100" 
+                          className="form-controlg w-100" 
                           name="message" 
                           id="message" 
                           cols="30" 
@@ -137,9 +137,9 @@ function Contact() {
                         ></textarea>
                       </div>
                     </div>
-                    <div className="col-sm-6">
-                      <div className="form-group">
-                        <input className="form-control valid" name="name" id="name" type="text" placeholder="Enter your name"  
+                    <div className="col-sm-6g">
+                      <div className="form-groupg">
+                        <input className="form-controlg valid" name="name" id="name" type="text" placeholder="Enter your name"  
                           value={name}  
                           onChange={(e) => {
                             setName(e.target.value); 
@@ -148,9 +148,9 @@ function Contact() {
                         />
                       </div>
                     </div>
-                    <div className="col-sm-6">
-                      <div className="form-group">
-                        <input className="form-control valid" name="email" id="email" type="email" placeholder="Enter email address"   
+                    <div className="col-sm-6g">
+                      <div className="form-groupg">
+                        <input className="form-controlg valid" name="email" id="email" type="email" placeholder="Enter email address"   
                           value={address}  
                           onChange={(e) => {
                             setAddress(e.target.value); 
@@ -159,9 +159,9 @@ function Contact() {
                         />
                       </div>
                     </div>
-                    <div className="col-12">
-                      <div className="form-group">
-                        <input className="form-control" name="subject" id="subject" type="text" placeholder="Enter Subject"   
+                    <div className="col-12g">
+                      <div className="form-groupg">
+                        <input className="form-controlg" name="subject" id="subject" type="text" placeholder="Enter Subject"   
                           value={subject}  
                           onChange={(e) => {
                             setSubject(e.target.value); 
@@ -171,29 +171,29 @@ function Contact() {
                       </div>
                     </div>
                   </div>
-                  <div className="form-group mt-3">
-                    <button type="submit"  className="button button-contactForm boxed-btn"   onClick={handleSubmit}>Send</button>
+                  <div className="form-groupg mt-3">
+                    <button type="submit"  className="buttong button-contactForm boxed-btn"   onClick={handleSubmit}>Send</button>
                   </div>
                 </form>
               </div>
-              <div className="contact-info-container">
-                <div className="media contact-info-new">
-                  <span className="contact-info__icon"><i className="fas fa-home"></i></span> 
-                  <div className="media-body">
+              <div className="contact-info-containerg">
+                <div className="mediag contact-info-new">
+                  <span className="contact-info__icong"><i className="fas fa-home"></i></span> 
+                  <div className="media-bodyg">
                     <h3>{location.p1}</h3>
                     <p>{location.p2}</p>
                   </div>
                 </div>
-                <div className="media contact-info-new">
-                  <span className="contact-info__icon"><i className="fas fa-phone-alt"></i></span>
-                  <div className="media-body">
+                <div className="mediag contact-info-new">
+                  <span className="contact-info__icong"><i className="fas fa-phone-alt"></i></span>
+                  <div className="media-bodyg">
                     <h3>{phoneNumber.number}</h3>
                     <p>{phoneNumber.time}</p>
                   </div>
                 </div>
-                <div className="media contact-info-new">
-                  <span className="contact-info__icon"><i className="fas fa-envelope"></i></span>
-                  <div className="media-body">
+                <div className="mediag contact-info-new">
+                  <span className="contact-info__icong"><i className="fas fa-envelope"></i></span>
+                  <div className="media-bodyg">
                     <h3>{email.email}</h3>
                     <p>{email.mass}</p>
                   </div>

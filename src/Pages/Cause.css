@@ -1,4 +1,3 @@
-/* لتحديد الصورة وتكبيرها في قائمة القضايا */
 .popular_causes_area-new .single_cause .thumb img {
     width: 100%;
     transform: scale(1);
@@ -8,14 +7,12 @@
 .causes_active-new  {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
 }
 
-/* ضبط العنصر الفردي ليكون بعرض مناسب */
 .causes_active-new .single_cause {
-    flex: 0 0 25%; /* يعني أن كل عنصر سيأخذ 32% من العرض الإجمالي للحاوية */
+    flex: 0 0 25%;
     box-sizing: border-box;
-    margin-bottom: 20px; /* مساحة بين العناصر العمودية */
+    margin-bottom: 20px;
     margin-top: 5%;
     justify-content: space-between;
     margin-left: 5%;
@@ -23,17 +20,16 @@
 
 @media (max-width: 991px) {
     .popular_causes_area-new .single_cause {
-        flex: 0 0 48%; /* عند العرض المتوسط، سيكون لكل عنصر عرض 48% */
+        flex: 0 0 48%;
     }
 }
 
 @media (max-width: 767px) {
     .popular_causes_area-new .single_cause {
-        flex: 0 0 100%; /* عند العرض الصغير، سيكون كل عنصر بعرض 100% */
+        flex: 0 0 100%;
     }
 }
 
-/* لتحديد محتوى القضايا وضبط التنسيق */
 .popular_causes_area-new .single_cause .causes_content {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     padding: 30px 30px 34px 30px;
@@ -41,7 +37,6 @@
     border-radius: 0 0px 7px 7px;
 }
 
-/* شريط التقدم المخصص */
 .popular_causes_area-new .single_cause .causes_content .custom_progress_bar {
     position: absolute;
     left: 0;
@@ -60,17 +55,18 @@
     background-color: #3CC78F;
     position: relative;
 }
+
 .popular_causes_area-new .single_cause .causes_content .custom_progress_bar .progress .progress-bar .progres_count {
     margin-bottom: 50%;
     position: absolute;
     right: 0;
-    width: 40px; /* حدد عرض الدائرة */
-    height: 60px; /* قلل ارتفاع الدائرة */
+    width: 40px;
+    height: 60px;
     border-radius: 50%;
-    font-size: 25px; /* قلل حجم الخط */
+    font-size: 25px;
     background: #3CC78F;
-    line-height: 60px; /* تأكد من مطابقة ارتفاع الخط مع ارتفاع الدائرة */
-    margin-top: -20px; /* ضبط المسافة العلوية وفقاً للحجم الجديد */
+    line-height: 60px;
+    margin-top: -20px;
 }
 
 @media (max-width: 767px) {
@@ -82,7 +78,6 @@
     }
 }
 
-/* تنسيق التوازن */
 .popular_causes_area-new .single_cause .causes_content .balance {
     padding-bottom: 20px;
     margin-top: 35px;
@@ -92,7 +87,6 @@
 }
 
 .popular_causes_area-new .single_cause .causes_content span {
-  
     padding-right: 15%;
     justify-content: space-between;
 }
@@ -110,12 +104,10 @@
     font-family: "Open Sans", sans-serif;
 }
 
-/* تنسيق العنوان */
 .popular_causes_area-new .single_cause .causes_content h4 {
     font-size: 25px;
     margin-bottom: 20px;
     margin-top: 0px;
-
 }
 
 @media (max-width: 767px) {
@@ -124,7 +116,6 @@
     }
 }
 
-/* تنسيق الوصف */
 .popular_causes_area-new .single_cause .causes_content p {
     margin-bottom: 15px;
     color: #7A7B7C;
@@ -133,17 +124,14 @@
     margin-bottom: 20px;
 }
 
-/* تأثير التحويل عند التمرير فوق الصورة */
 .popular_causes_area-new .single_cause:hover .thumb img {
     transform: scale(1.05);
 }
 
-/* ضبط المسافة بين القضايا */
 .popular_causes_area-new .single_cause {
     margin-bottom: 35px;
 }
 
-/* ضبط إعدادات الصورة المصغرة */
 .popular_causes_area-new .single_cause .thumb {
     border-radius: 7px 7px 0 0;
     overflow: hidden;

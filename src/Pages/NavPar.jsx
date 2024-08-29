@@ -5,11 +5,23 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faPinterest, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faPhone, faEnvelope, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import logoImage from '../logo.png';
+import React, { useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function NavPar(props) {
     const [phoneNumber, setPhoneNumber] = useState("+1 (454) 556-5656");
     const [email, setEmail] = useState(" Yourmail@gmail.com");
-
+    const navigate = useNavigate();
+  
+    const scrollToElement = () => {
+      navigate('/home'); 
+      setTimeout(() => {
+        const element = document.getElementById('nono');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' }); 
+        }
+      }, 100); 
+    };
     return (
         <header className="App-header">
             <div className="top-bar">
@@ -32,7 +44,7 @@ function NavPar(props) {
                     </a>
                 </div>
             </div>
-            <nav className="navbar">
+            <nav className="navbar" >
                 <div className="logo">
                     <img src={logoImage} alt="Logo" />
                 </div>
@@ -53,12 +65,12 @@ function NavPar(props) {
                     </li>
                     <li><Link to="/Contact">Contact</Link></li>
                 </ul>
-                <button className="donate-button">Make a Donate</button>
+                <button className="donate-button" onClick={scrollToElement}>Make a Donate</button>
             </nav>
             {props.type === 'home' ? (
                 <div
-                    className="hero-section d-flex align-items-center slider_bg_1 overlay2"
-                    style={{ backgroundImage: `url(${props.img})` }}
+                    className="hero-section  d-flex align-items-center slider_bg_1 overlay2"
+                    style={{ backgroundImage: `url(${props.img})` ,display:"block"}}
                 >
                     <h2><br /></h2>
                     <h2><br /></h2>
@@ -110,7 +122,7 @@ function NavPar(props) {
                     >
                         <h2><br /></h2>
                         <h2><br /></h2>
-                        <h1 className='contacth1' style={{ textAlign: "center", marginTop: "10%" }}>Causes</h1>
+                        <h1 className='contacth1' style={{ textAlign: "center", marginTop: "10%" }}>Contact</h1>
                     </div>
                 </div>
             ) :  props.type === 'Blog' ? (
@@ -121,7 +133,7 @@ function NavPar(props) {
                     >
                         <h2><br /></h2>
                         <h2><br /></h2>
-                        <h1 className='contacth1' style={{ textAlign: "center", marginTop: "10%" }}>Causes</h1>
+                        <h1 className='contacth1' style={{ textAlign: "center", marginTop: "10%" }}>Blog</h1>
                     </div>
                 </div>
             ) : props.type === 'SingleBlog' ? (
@@ -133,6 +145,17 @@ function NavPar(props) {
                         <h2><br /></h2>
                         <h2><br /></h2>
                         <h1 className='contacth1' style={{ textAlign: "center", marginTop: "10%",marginLeft:"25%" }}>    SingleBlog</h1>
+                    </div>
+                </div>
+            ): props.type === 'element' ? (
+                <div className='contact'>
+                    <div
+                        className="hero-section d-flex align-items-center slider_bg_1 overlay2"
+                        style={{ backgroundImage: `url(${props.img})` }}
+                    >
+                        <h2><br /></h2>
+                        <h2><br /></h2>
+                        <h1 className='contacth1' style={{ textAlign: "center", marginTop: "10%",marginLeft:"25%" }}>    Element</h1>
                     </div>
                 </div>
             ) : null}

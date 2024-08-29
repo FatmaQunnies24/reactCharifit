@@ -73,18 +73,10 @@ h5 a:hover {
     color: #333;
 }
 
-
-
-
-
-
-
-
 .comment-form {
     width: 100%;
     margin: 0 auto;
     padding: 20px;
-    /* border: 1px solid #e0e0e0; */
     border-radius: 5px;
     background-color: #fff;
 }
@@ -120,15 +112,16 @@ h5 a:hover {
     gap: 15px;
 }
 
- .buttonn {
-    width: 30%; /* عرض البوتون */
-    padding: 10px; /* المسافة الداخلية */
-    background-color: #ffffff; /* لون الخلفية */
-    color: #28a745; /* لون النص */
-    border: 1px solid #28a745;    border-radius: 0px; /* زوايا مستديرة */
-    font-size: 16px; /* حجم الخط */
-    cursor: pointer; /* تغيير المؤشر عند المرور */
-    transition: background-color 0.3s ease; /* تأثير تغيير اللون */
+.buttonn {
+    width: 30%;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #28a745;
+    border: 1px solid #28a745;
+    border-radius: 0px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
     margin-left: 10%;
 }
 

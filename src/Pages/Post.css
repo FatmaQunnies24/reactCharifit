@@ -1,16 +1,15 @@
 .post_item {
   display: flex;
   align-items: center;
-  /* margin-bottom: 15px; */
-  border-radius: 8px; /* زوايا دائرية */
+  border-radius: 8px;
 }
 
 .post_item img {
-  width: 60px; /* عرض الصورة */
-  height: 60px; /* ارتفاع الصورة */
-  border-radius: 50%; /* صورة دائرية */
-  object-fit: cover; /* للتأكد من عدم تمدد الصورة خارج الحدود */
-  margin-right: 15px; /* مسافة بين الصورة والنص */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
 }
 
 .media-body {
@@ -18,14 +17,14 @@
 }
 
 .media-body h3 {
-  font-size: 16px; /* حجم الخط */
-  color: #333; /* لون النص */
-  margin-bottom: 5px; /* مسافة تحت العنوان */
-  line-height: 1.2; /* تحسين قراءة العنوان */
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+  line-height: 1.2;
 }
 
 .media-body p {
-  font-size: 14px; /* حجم الخط للنص */
-  color: #888; /* لون النص */
-  margin: 0; /* إزالة أي مسافة غير مرغوبة */
+  font-size: 14px;
+  color: #888;
+  margin: 0;
 }

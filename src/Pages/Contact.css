@@ -1,88 +1,83 @@
-/* MapComponent.css */
-
-/* تعيين حجم الخريطة */
 .map-container {
   height: 480px;
   width: 100%;
 }
 
-.contact-section {
+.contact-sectiong {
   padding: 50px 0;
-  background-color: #f9f9f9;
+  background-color: #fff;
 }
 
-.contact-title {
+.contact-titleg {
   font-size: 36px;
   font-weight: 700;
   color: #000;
   margin-bottom: 40px;
 }
 
-.contact-info-container {
-  margin-top: 5%; /* تقليل المسافة من الأعلى */
-  margin-left: 9%;
+.contact-info-containerg {
+  margin-top: 5%;
 }
 
-.contact-container {
+.contact-containerg {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 100px; /* مسافة بين العناصر */
+  gap: 100px;
+  margin-left: 10%;
 }
 
-.contact-info__icon {
-  font-size: 24px; /* حجم الأيقونات */
-  /* color: #777; لون الأيقونات أفتح */
+.contact-info__icong {
+  font-size: 24px;
   display: inline-block;
   margin-right: 15px;
-  vertical-align: middle; /* محاذاة وسط الأيقونة بالنسبة للنص */
-  margin-top: -5px; /* رفع الأيقونات للأعلى */
+  vertical-align: middle;
+  margin-top: -5px;
 }
 
-.contact-form-container, 
-.contact-info-container {
-  flex: 1; /* يجعل كلا العنصرين يأخذان نفس العرض */
-  min-width: 300px; /* أقل عرض مقبول */
+.contact-form-containerg, 
+.contact-info-containerg {
+  flex: 1;
+  min-width: 300px;
   padding: 20px;
   box-sizing: border-box;
-  margin-left: 10%;
 }
 
 .contact-info-new {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  border-bottom: 1px solid #ddd; /* إضافة خط سفلي */
-  padding-bottom: 15px; /* إضافة مسافة تحت كل عنصر */
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
 }
 
-.contact-info__icon i {
-  font-size: 30px; /* تكبير حجم الأيقونات */
-  color: #777; /* تغيير لون الأيقونات إلى لون رمادي فاتح */
+.contact-info__icong i {
+  font-size: 30px;
+  color: #777;
 }
 
-.media-body h3 {
-  font-size: 15px; /* تكبير حجم الخط */
-  font-weight: 600; /* جعل الخط أكثر سمكًا */
-  margin-bottom: 5px; /* مسافة صغيرة بين العنوان والوصف */
-  color: #000; /* لون النص الأساسي */
+.media-bodyg h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #000;
 }
 
-.media-body p {
-  font-size: 14px; /* حجم أصغر للوصف */
-  color: #777; /* لون الوصف */
+.media-bodyg p {
+  font-size: 14px;
+  color: #777;
   margin: 0;
 }
 
-.form-contact {
+.form-contactg {
   width: 100%;
 }
 
-.form-group {
+.form-groupg {
   margin-bottom: 20px;
 }
 
-.form-control {
+.form-controlg {
   border: 1px solid #ddd;
   padding: 10px;
   width: 100%;
@@ -102,4 +97,15 @@
 
 .button-contactForm:hover {
   background-color: #45a049;
+}
+
+.buttong {
+  width: 100%;
+  background-color: #ffffff;
+  color: #28a745;
+  border: 1px solid #28a745;
+  border-radius: 0px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }

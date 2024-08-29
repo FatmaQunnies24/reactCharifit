@@ -1,250 +1,213 @@
 .blog_area a {
-    color: #666666 !important;
-    text-decoration: none;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
-  .row{
-    display: flex;
-    width: 80%;
-    justify-content: space-between;
-    margin-left: 10%;
-    margin-top: 5%;
-    /* gap: 2%; */
-  }
-  
-  /* line 14, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-  .blog_area a:hover, .blog_area a :hover {
-    background: -webkit-linear-gradient(131deg, #3CC78F 0%, #3CC78F 99%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-decoration: none;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
-  
-  /* line 24, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-  .single-blog {
-    overflow: hidden;
-    margin-bottom: 30px;
-  }
-  
-  /* line 28, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-  .single-blog:hover {
-    box-shadow: 0px 10px 20px 0px rgba(42, 34, 123, 0.1);
-  }
-  
-  /* line 32, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-  .single-blog .thumb {
-    overflow: hidden;
-    position: relative;
-  }
-  
-  /* line 36, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-  .single-blog .thumb:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    opacity: 0;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
-  
-  /* line 49, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-  .single-blog h4 {
-    border-bottom: 1px solid #dfdfdf;
-    padding-bottom: 34px;
-    margin-bottom: 25px;
-  }
-  
-  /* line 56, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-  .single-blog a {
-    font-size: 20px;
-    font-weight: 600;
-  }
-  
-  /* line 66, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-  .single-blog .date {
-    color: #666666;
-    text-align: left;
-    display: inline-block;
-    font-size: 13px;
-    font-weight: 300;
-  }
-  
-  /* line 74, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+  color: #666666 !important;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.row {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-top: 5%;
+  /* gap: 2%; */
+}
+
+.blog_area a:hover, .blog_area a :hover {
+  background: -webkit-linear-gradient(131deg, #3CC78F 0%, #3CC78F 99%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.single-blog {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.single-blog:hover {
+  box-shadow: 0px 10px 20px 0px rgba(42, 34, 123, 0.1);
+}
+
+.single-blog .thumb {
+  overflow: hidden;
+  position: relative;
+}
+
+.single-blog .thumb:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.single-blog h4 {
+  border-bottom: 1px solid #dfdfdf;
+  padding-bottom: 34px;
+  margin-bottom: 25px;
+}
+
+.single-blog a {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.single-blog .date {
+  color: #666666;
+  text-align: left;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.single-blog .tag {
+  text-align: left;
+  display: inline-block;
+  float: left;
+  font-size: 13px;
+  font-weight: 300;
+  margin-right: 22px;
+  position: relative;
+}
+
+.single-blog .tag:after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 10px;
+  background: #acacac;
+  right: -12px;
+  top: 7px;
+}
+
+@media (max-width: 1199px) {
   .single-blog .tag {
-    text-align: left;
-    display: inline-block;
-    float: left;
-    font-size: 13px;
-    font-weight: 300;
-    margin-right: 22px;
-    position: relative;
-  }
-  
-  /* line 84, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-  .single-blog .tag:after {
-    content: '';
-    position: absolute;
-    width: 1px;
-    height: 10px;
-    background: #acacac;
-    right: -12px;
-    top: 7px;
-  }
-  
-  @media (max-width: 1199px) {
-    /* line 74, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-    .single-blog .tag {
       margin-right: 8px;
-    }
-    /* line 98, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-    .single-blog .tag:after {
+  }
+  .single-blog .tag:after {
       display: none;
-    }
   }
-  
-  /* line 104, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-  .single-blog .likes {
-    margin-right: 16px;
-  }
-  
-  @media (max-width: 800px) {
-    /* line 24, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-    .single-blog {
+}
+
+.single-blog .likes {
+  margin-right: 16px;
+}
+
+@media (max-width: 800px) {
+  .single-blog {
       margin-bottom: 30px;
-    }
   }
-  
-  /* line 112, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+}
+
+.single-blog .single-blog-content {
+  padding: 30px;
+}
+
+.single-blog .single-blog-content .meta-bottom p {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.single-blog .single-blog-content .meta-bottom i {
+  color: #fdcb9e;
+  font-size: 13px;
+  margin-right: 7px;
+}
+
+@media (max-width: 1199px) {
   .single-blog .single-blog-content {
-    padding: 30px;
-  }
-  
-  /* line 116, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-  .single-blog .single-blog-content .meta-bottom p {
-    font-size: 13px;
-    font-weight: 300;
-  }
-  
-  /* line 121, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-  .single-blog .single-blog-content .meta-bottom i {
-    color: #fdcb9e;
-    font-size: 13px;
-    margin-right: 7px;
-  }
-  
-  @media (max-width: 1199px) {
-    /* line 112, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-    .single-blog .single-blog-content {
       padding: 15px;
-    }
   }
-  
-  /* line 135, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-  .single-blog:hover .thumb:after {
-    opacity: .7;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
-  
-  @media (max-width: 1199px) {
-    /* line 143, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-    .single-blog h4 {
+}
+
+.single-blog:hover .thumb:after {
+  opacity: .7;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media (max-width: 1199px) {
+  .single-blog h4 {
       transition: all 300ms linear 0s;
       border-bottom: 1px solid #dfdfdf;
       padding-bottom: 14px;
       margin-bottom: 12px;
-    }
-    /* line 149, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-    .single-blog h4 a {
+  }
+  .single-blog h4 a {
       font-size: 18px;
-    }
   }
-  
-  /* line 157, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-  .full_image.single-blog {
-    position: relative;
-  }
-  
-  /* line 160, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
+}
+
+.full_image.single-blog {
+  position: relative;
+}
+
+.full_image.single-blog .single-blog-content {
+  position: absolute;
+  left: 35px;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media (min-width: 992px) {
   .full_image.single-blog .single-blog-content {
-    position: absolute;
-    left: 35px;
-    bottom: 0;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
-  
-  @media (min-width: 992px) {
-    /* line 160, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-    .full_image.single-blog .single-blog-content {
       bottom: 100px;
-    }
   }
-  
-  /* line 179, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-  .full_image.single-blog h4 {
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    border-bottom: none;
-    padding-bottom: 5px;
-  }
-  
-  /* line 185, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-  .full_image.single-blog a {
-    font-size: 20px;
-    font-weight: 600;
-  }
-  
-  /* line 195, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-  .full_image.single-blog .date {
-    color: #fff;
-  }
-  
-  /* line 200, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-  .full_image.single-blog:hover .single-blog-content {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
-  
-  /* End Blog Area css
-  ============================================================================================ */
-  /* Latest Blog Area css
-  ============================================================================================ */
-  /* line 224, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-  .l_blog_item .l_blog_text .date {
-    margin-top: 24px;
-    margin-bottom: 15px;
-  }
-  
-  /* line 228, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-  .l_blog_item .l_blog_text .date a {
-    font-size: 12px;
-  }
-  
-  /* line 234, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-  .l_blog_item .l_blog_text h4 {
-    font-size: 18px;
-    border-bottom: 1px solid #eeeeee;
-    margin-bottom: 0px;
-    padding-bottom: 20px;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
-  
-  /* line 247, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-  .l_blog_item .l_blog_text p {
-    margin-bottom: 0px;
-    padding-top: 20px;
-  }
-  
+}
+
+.full_image.single-blog h4 {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-bottom: none;
+  padding-bottom: 5px;
+}
+
+.full_image.single-blog a {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.full_image.single-blog .date {
+  color: #fff;
+}
+
+.full_image.single-blog:hover .single-blog-content {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.l_blog_item .l_blog_text .date {
+  margin-top: 24px;
+  margin-bottom: 15px;
+}
+
+.l_blog_item .l_blog_text .date a {
+  font-size: 12px;
+}
+
+.l_blog_item .l_blog_text h4 {
+  font-size: 18px;
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.l_blog_item .l_blog_text p {
+  margin-bottom: 0px;
+  padding-top: 20px;
+}

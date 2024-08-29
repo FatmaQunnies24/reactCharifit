@@ -1,20 +1,21 @@
-.news__area {
+.news__areaa {
     background: #F3FCF8;
     padding: 40px 0;
-    overflow-x: auto;
     display: flex;
     gap: 20px;
     padding-left: 5%;
-    padding-right: 10%;
+    padding-right: 5%;
+    overflow-x: auto;
     scroll-behavior: smooth;
+    width: 80%;
 }
 
-.news__area::-webkit-scrollbar {
-    display: none;
+.news__areaa::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 
-.news__area .single__blog {
-    /* width: 40%; */
+.news__areaa .single__bloga {
     background: #fff;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     border-radius: 7px;
@@ -22,34 +23,35 @@
     flex-shrink: 0;
     display: flex;
     align-items: center;
+    width: 50%;
 }
 
-.single__blog .thum {
-    /* width: 50%; */
+.single__bloga .thuma {
+    width: 50%;
     height: 100%;
     overflow: hidden;
 }
 
-.single__blog .thum img {
-    /* width: 100%; */
+.single__bloga .thuma img {
+    width: 100%;
     height: auto;
     display: block;
 }
 
-.single__blog .newsinfo {
+.single__bloga .newsinfoa {
     padding: 20px;
-    /* width: 50%; */
+    width: 50%;
     text-align: left;
 }
 
-.newsinfo span {
+.newsinfoa span {
     font-size: 14px;
     font-weight: 600;
     color: #222222;
     font-family: "Open Sans", sans-serif;
 }
 
-.newsinfo h3 {
+.newsinfoa h3 {
     font-size: 20px;
     color: #222222;
     margin-top: 10px;
@@ -57,38 +59,39 @@
     font-weight: bold;
 }
 
-.newsinfo p {
+.newsinfoa p {
     font-size: 16px;
     line-height: 1.5;
     color: #7A7B7C;
     margin: 15px 0;
 }
 
-.newsinfo .read_more {
+.newsinfoa .read_morea {
     font-size: 14px;
     font-weight: 600;
     color: #009688;
     text-decoration: none;
 }
 
-.newsinfo .read_more:hover {
+.newsinfoa .read_morea:hover {
     text-decoration: underline;
 }
 
 @media (max-width: 767px) {
-    .news__area {
+    .news__areaa {
         flex-direction: column;
         padding-left: 5%;
         padding-right: 5%;
+        width: 100%;
     }
 
-    .news__area .single__blog {
-        /* width: 100%; */
+    .news__areaa .single__bloga {
+        width: 100%;
         flex-direction: column;
     }
 
-    .single__blog .thum, 
-    .single__blog .newsinfo {
-        /* width: 100%; */
+    .single__bloga .thuma, 
+    .single__bloga .newsinfoa {
+        width: 100%;
     }
 }
