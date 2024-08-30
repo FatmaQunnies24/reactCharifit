@@ -40,17 +40,17 @@ function Donation() {
         <>
             <div data-scroll-index="1" className="make_donation_area section_padding">
                 <div className="container">
-                    <div className="row justify-content-center">
+                    <div className="row justify-content-center" style={{display:"block"}}>
                         <div className="col-lg-6">
                             <div className="section_title text-center mb-55">
                                 <h3><span>Make a Donation</span></h3>
                             </div>
                         </div>
                     </div>
-                    <div className="row justify-content-center">
+                    <div className="row justify-content-center"style={{display:"block"}}>
                         <div className="col-lg-6">
                             <form onSubmit={handleSubmit} className="donation_form">
-                                <div className="row align-items-center">
+                                <div className="row align-items-center" >
                                     <div className="col-md-4">
                                         <div className="single_amount">
                                             <div className="input_field">
@@ -114,7 +114,7 @@ function Donation() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="row">
+                                <div className="row" style={{display:"block"}}>
                                     <div className="col-12">
                                         <div className="donate_now_btn text-center">
                                             <button type="submit" className="boxed-btn4">Donate Now</button>

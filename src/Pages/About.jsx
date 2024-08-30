@@ -4,7 +4,7 @@ import HomePage from "../HomePage";
 function About (props){
     return(<>
     
-    <HomePage  img={props.img} ></HomePage>
+    <HomePage  img="/images/bradcam.png" type="about" ></HomePage>
     
     </>);
 }

@@ -266,30 +266,6 @@
   z-index: -1;
 }
 
-.causes_active {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  width: 80%; /* عرض 80% */
-  margin: 0 auto; /* تمركز المحتوى */
-}
-
-.single_cause {
-  flex: 0 0 33.33%; /* يظهر 3 عناصر فقط في الصفحة الواحدة */
-  scroll-snap-align: start;
-  margin-right: 20px; /* مسافة بين العناصر */
-}
-
-.causes_active::-webkit-scrollbar {
-  width: 0;  /* إخفاء شريط التمرير */
-  height: 0;
-}
-
-.causes_active::-webkit-scrollbar-thumb {
-  background-color: transparent;
-}
-
 
 
 
@@ -325,4 +301,28 @@
   width:190%;
   height: 65%;
 
+}
+
+
+
+
+
+
+.navbar ul#navigation li:hover > .submenu {
+  display: block;
+}
+
+.navbar ul#navigation li .submenu {
+  display: none; 
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background-color: #fff; 
+  z-index: 1000; 
+}
+
+/* إضافة نمط لعناصر القائمة المنسدلة لتظهر بشكل جيد */
+.navbar ul#navigation li .submenu li {
+  padding: 10px;
+  width: 200px; /* يمكنك تعديل العرض حسب الحاجة */
 }

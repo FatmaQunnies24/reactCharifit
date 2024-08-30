@@ -44,18 +44,18 @@ function News() {
     }, []);
 
     return (
-        <div className="news__area">
+        <div className="news__areaa">
         {newsList.map((item, index) => (
-            <div key={index} className="single__blog">
-                <div className="thum">
+            <div key={index} className="single__bloga">
+                <div className="thuma">
                     <img src={item.imgUrl} alt={item.name} />
                 </div>
-                <div className="newsinfo">
+                <div className="newsinfoa">
                     <span>{item.date}</span>
                     <h3>{item.name}</h3>
                     <p>{item.desc}</p>
                    
-                    <Link to="/SingleBlog" className="read_more" style={{ marginLeft: 0 }}>   Read More
+                    <Link to="/SingleBlog" className="read_morea" style={{ marginLeft: 0 }}>   Read More
                     </Link>
 
                 </div>
