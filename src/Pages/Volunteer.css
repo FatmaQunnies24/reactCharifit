@@ -38,7 +38,7 @@
 
 .our_volunteer_area .single_volunteer .volunteer_thumb img {
     width: 80%;
-    height: auto;
+    height: 250px;
     border-radius: 7px;
     transition: transform 0.3s ease-in-out;
 }
@@ -97,4 +97,7 @@
 
 .our_volunteer_area .single_volunteer .volunteer_info .social_links ul li a:hover {
     color: #007bff;
+}
+.single_volunteer img{
+    height:80%;
 }

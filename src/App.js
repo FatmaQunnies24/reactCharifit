@@ -14,8 +14,9 @@ import HomePage from "./HomePage";
 function App(props) {
   return(
  <div>
-  {/* <HomePage img="/images/boyImg.png"></HomePage> */}
+
       <Routes>
+         <Route path="/" element={<Navigate to="/Home" />}/>
         <Route path="/Home" element={<HomePage img="/images/boyImg.png"  type="home"/>} />
         <Route path="/About" element={<HomePage img="/images/bradcam.png" type="about"/>} />
         <Route path="/Blog" element={<Blog />} />

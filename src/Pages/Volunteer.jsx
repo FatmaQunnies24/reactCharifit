@@ -35,14 +35,14 @@ function Volunteer() {
     ]);
 
     useEffect(() => {
-        fetch("", {
+        fetch("http://127.0.0.1:8000/api/volunteer", {
             headers: {
                 // Authorization: "Bearer " + token,
             },
         })
             .then((response) => response.json())
             .then((data) => {
-                setVolunteerList(data);
+                setVolunteerList(data.Volunteer);
             })
             .catch((error) => console.error("Error fetching data:", error));
     }, []);

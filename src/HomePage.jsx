@@ -92,14 +92,15 @@ const [reasonOfHelping,setReasonOfHelping]=useState([{"id":1,"name":"Collecting 
 
 
 useEffect(() => {
-  fetch("", {
+  fetch("http://127.0.0.1:8000/api/posts", {
       headers: {
           // Authorization: "Bearer " + token,
       },
   })
       .then((response) => response.json())
       .then((data) => {
-        setReasonOfHelping(data);
+        console.log(data.reason_of_helping);
+        setReasonOfHelping(data.reason_of_helping);
       })
       .catch((error) => console.error("Error fetching data:", error));
 }, []);

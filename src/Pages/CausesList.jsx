@@ -5,18 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-ro
 function CausesList(props) {
     const [causesList, setCausesList] = useState(props.list );
 
-    useEffect(() => {
-        fetch("", {
-            headers: {
-                // Authorization: "Bearer " + token,
-            },
-        })
-        .then((response) => response.json())
-        .then((data) => {
-            setCausesList(data);
-        })
-        .catch((error) => console.error("Error fetching data:", error));
-    }, []);
+   
 
     return (
         
@@ -35,8 +24,8 @@ function CausesList(props) {
                                 </div>
                             </div>
                             <div className="balance d-flex justify-content-between align-items-center">
-                                <span>{props.cause.Raised}</span>
-                                <span>{props.cause.Goal}</span>
+                                <span>{props.cause.raised}</span>
+                                <span>{props.cause.goal}</span>
                             </div>
                             <h4>{props.cause.name}</h4>
                             <p>{props.cause.smallDisc}</p>
