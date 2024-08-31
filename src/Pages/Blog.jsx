@@ -56,14 +56,14 @@ const [blogList, setBlogList] = useState([{
     // const [blogList, setBlogList] = useState(props.blog || []);
 
     useEffect(() => {
-        fetch("", {
+        fetch("http://127.0.0.1:8000/api/blog", {
             headers: {
                 // Authorization: "Bearer " + token,
             },
         })
         .then((response) => response.json())
         .then((data) => {
-            setBlogList(data); 
+            setBlogList(data.Blog); 
         })
         .catch((error) => console.error("Error fetching data:", error));
     }, []);
@@ -77,13 +77,13 @@ const [blogList, setBlogList] = useState([{
                     <div className="col-lg-8 mb-5 mb-lg-0">
                         <div className="blog_left_sidebar">
                             {blogList.map((blog, index) => (
-                         <><BlogItem index={index} blog={blog}></BlogItem></>
+                         <><BlogItem getId={props.getId} index={index} blog={blog}></BlogItem></>
                             ))}
                         </div>
                     </div>
 
 
-                    <RightSideBlog></RightSideBlog>
+                    <RightSideBlog  ></RightSideBlog>
                 </div>
             </div>
         </section>

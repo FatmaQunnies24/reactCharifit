@@ -2,24 +2,28 @@ import { useState } from 'react';
 import "./Donation.css";
 
 function Donation() {
-    const [amount, setAmount] = useState('');
-    const [selectedAmount, setSelectedAmount] = useState('10');
+    const [ammount, setammount] = useState(0);
+    const [selectedammount, setSelectedammount] = useState('10');
 
-    const handleAmountChange = (e) => {
-        setAmount(e.target.value);
+    const handleammountChange = (e) => {
+        const value = e.target.value;
+        if (!isNaN(value) && value >= 0) {
+            setammount(value);
+        }
     };
+    
 
     const handleRadioChange = (e) => {
-        setSelectedAmount(e.target.value);
+        setSelectedammount(e.target.value);
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
         const data = {
-            amount: amount || selectedAmount,
+            ammount: ammount || selectedammount,
         };
 
-        fetch(" ", {
+        fetch("http://127.0.0.1:8000/api/donation", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -52,7 +56,7 @@ function Donation() {
                             <form onSubmit={handleSubmit} className="donation_form">
                                 <div className="row align-items-center" >
                                     <div className="col-md-4">
-                                        <div className="single_amount">
+                                        <div className="single_ammount">
                                             <div className="input_field">
                                                 <div className="input-group">
                                                     <div className="input-group-prepend">
@@ -62,20 +66,20 @@ function Donation() {
                                                         type="text"
                                                         className="form-control"
                                                         placeholder="40,200"
-                                                        aria-label="Amount"
+                                                        aria-label="ammount"
                                                         aria-describedby="basic-addon1"
-                                                        value={amount}
-                                                        onChange={handleAmountChange}
+                                                        value={ammount}
+                                                        onChange={handleammountChange}
                                                     />
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-md-8">
-                                        <div className="single_amount">
+                                        <div className="single_ammount">
                                             <div className="fixed_donat d-flex align-items-center justify-content-between">
                                                 <div className="select_prise">
-                                                    <h4>Select Amount:</h4>
+                                                    <h4>Select ammount:</h4>
                                                 </div>
                                                 <div className="single_doonate">
                                                     <input
@@ -83,7 +87,7 @@ function Donation() {
                                                         id="blns_1"
                                                         name="radio-group"
                                                         value="10"
-                                                        checked={selectedAmount === '10'}
+                                                        checked={selectedammount === '10'}
                                                         onChange={handleRadioChange}
                                                     />
                                                     <label htmlFor="blns_1">10</label>
@@ -94,7 +98,7 @@ function Donation() {
                                                         id="blns_2"
                                                         name="radio-group"
                                                         value="30"
-                                                        checked={selectedAmount === '30'}
+                                                        checked={selectedammount === '30'}
                                                         onChange={handleRadioChange}
                                                     />
                                                     <label htmlFor="blns_2">30</label>
@@ -105,7 +109,7 @@ function Donation() {
                                                         id="Other"
                                                         name="radio-group"
                                                         value="Other"
-                                                        checked={selectedAmount === 'Other'}
+                                                        checked={selectedammount === 'Other'}
                                                         onChange={handleRadioChange}
                                                     />
                                                     <label htmlFor="Other">Other</label>

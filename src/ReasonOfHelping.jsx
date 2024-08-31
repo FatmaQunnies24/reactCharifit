@@ -16,7 +16,9 @@ function ReasonOfHelping(props) {
             <div className="single_reson">
                 <div className="thume">
                     <div className="thum_1e">
-                        <img src={`/images/${props.imgUrl}`} alt={props.name} />
+                        {/* <img src={`/images/${props.imgUrl}`} alt={props.name} /> */}
+                        <img src={props.imgUrl} alt={props.name} />
+
                     </div>
                 </div>
                 <div className="help_contente">

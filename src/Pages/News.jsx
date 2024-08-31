@@ -31,14 +31,15 @@ function News() {
     ]);
 
     useEffect(() => {
-        fetch("", {
+        fetch("http://127.0.0.1:8000/api/news", {
             headers: {
                 // Authorization: "Bearer " + token,
             },
         })
             .then((response) => response.json())
             .then((data) => {
-                setNewsList(data);
+                console.log(data.News);
+                setNewsList(data.News);
             })
             .catch((error) => console.error("Error fetching data:", error));
     }, []);

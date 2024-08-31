@@ -4,7 +4,22 @@ import { Link } from 'react-router-dom';
 
 function BlogItem(props) {
     const { blog, index } = props;
-    
+        const [commentcount, setCommentcount] = useState(0);
+
+    useEffect(() => {
+        fetch(`http://127.0.0.1:8000/api/commentcount/${blog.id}`, {
+            headers: {
+                // Authorization: "Bearer " + token,
+            },
+        })
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data.comment_count)
+            setCommentcount(data.comment_count); 
+        })
+        .catch((error) => console.error("Error fetching data:", error));
+    }, []);
+
     return (
         <article className="blog_item" key={index}>
             <div className="blog_item_img">
@@ -20,13 +35,13 @@ function BlogItem(props) {
             </div>
 
             <div className="blog_details">
-                <Link className="d-inline-block" to={`/blog/${blog.id}`}>
-                    <h2>{blog.name}</h2>
+            <Link className="d-inline-block" to={`/SingleBlog`}>
+            <h2>{blog.name}</h2>
                 </Link>
-                <p>{blog.Disc}</p>
+                <p>{blog.disc}</p>
                 <ul className="blog-info-link">
                     <li><a href="#"><i className="fa fa-user"></i> {blog.style}</a></li>
-                    <li><a href="#"><i className="fa fa-comments"></i> {blog.NumComment} Comments</a></li>
+                    <li><a href="#"><i className="fa fa-comments"></i> {commentcount} Comments</a></li>
                 </ul>
             </div>
         </article>
