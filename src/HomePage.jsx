@@ -97,14 +97,15 @@ useEffect(() => {
           // Authorization: "Bearer " + token,
       },
   })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data.reason_of_helping);
-        setReasonOfHelping(data.reason_of_helping);
-      })
-      .catch((error) => console.error("Error fetching data:", error));
+  .then((response) => response.json())
+  .then((data) => {
+    if (data.reason_of_helping && data.reason_of_helping.length > 0) {
+      console.log(data.reason_of_helping);
+      setReasonOfHelping(data.reason_of_helping);
+    }
+  })
+  .catch((error) => console.error("Error fetching data:", error));
 }, []);
-
   return (
     
     <div className="App">
@@ -249,6 +250,7 @@ useEffect(() => {
                         <Route path="/About" element={<About img="/images/bradcam.png"/>} />
                         <Route path="/Blog" element={<Blog />} />
                         <Route path="/SingleBlog" element={<SingleBlog />} />
+                        
                         <Route path="/Elements" element={<Elements />} />
                         <Route path="/Cause" element={<Cause />} />
                         <Route path="/Contact" element={<Contact/>} />
