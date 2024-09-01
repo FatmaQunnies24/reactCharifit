@@ -250,7 +250,8 @@ useEffect(() => {
                         <Route path="/About" element={<About img="/images/bradcam.png"/>} />
                         <Route path="/Blog" element={<Blog />} />
                         <Route path="/SingleBlog" element={<SingleBlog />} />
-                        
+                        <Route path="/singleBlog/:id" element={<SingleBlog />} />
+
                         <Route path="/Elements" element={<Elements />} />
                         <Route path="/Cause" element={<Cause />} />
                         <Route path="/Contact" element={<Contact/>} />

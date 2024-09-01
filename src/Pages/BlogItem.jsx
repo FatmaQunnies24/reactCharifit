@@ -35,10 +35,7 @@ function BlogItem(props) {
             </div>
 
             <div className="blog_details">
-            <Link className="d-inline-block"  to={{
-    pathname: `/SingleBlog`,
-    state: { blog: props.blog }
-  }}>
+            <Link className="d-inline-block" to={`/SingleBlog`}>
             <h2>{blog.name}</h2>
                 </Link>
                 <p>{blog.disc}</p>
